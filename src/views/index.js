@@ -1,3 +1,4 @@
+export { default as DevelopList } from './DevelopList';
 export { default as Account } from './Account';
 export { default as Dashboard } from './Dashboard';
 export { default as Icons } from './Icons';
