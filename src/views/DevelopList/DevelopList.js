@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
 import CodeBlock from './code-block';
-
+import 'github-markdown-css';
 import frontMd from './../../markdown/frontend/angularjs-digest.md';
 
 const DevelopList = () => {
@@ -15,7 +15,7 @@ const DevelopList = () => {
 
   return (
     <div class="markdown_root">
-      <div class="markdown_content">
+      <div class="markdown_content markdown-body">
         <Markdown
           className="result"
           source={markdownSrc}

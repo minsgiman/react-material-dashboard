@@ -28,18 +28,5 @@ a {
   .markdown_content {
     padding:18px;
     background:white;
-    li {
-      display:block;
-      &:before {
-        display:inline-block;
-        content:'';
-        width:4px;
-        height:4px;
-        border-radius:6px;
-        background:black;
-        margin:0 6px 3px 0;
-        vertical-align:middle;
-      }
-    }
   }
 }
