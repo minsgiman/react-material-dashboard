@@ -5,16 +5,17 @@ import { RouteWithLayout } from './components';
 import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 
 import {
-  DevelopList as DevelopListView,
-  Dashboard as DashboardView,
-  ProductList as ProductListView,
-  UserList as UserListView,
-  Typography as TypographyView,
-  Icons as IconsView,
-  Account as AccountView,
-  Settings as SettingsView,
-  SignUp as SignUpView,
-  SignIn as SignInView,
+  Frontend as FrontendView,
+  Vue as VueView,
+  ReactView,
+  Javascript as JavascriptView,
+  Css as CssView,
+  Polymer as PolymerView,
+  Nodejs as NodejsView,
+  Backend as BackendView,
+  MarkdownViewer as MarkdownViewerView,
+  Webrtc as WebrtcView,
+
   NotFound as NotFoundView
 } from './views';
 
@@ -24,67 +25,67 @@ const Routes = () => {
       <Redirect
         exact
         from="/"
-        to="/develops"
+        to="/frontend"
       />
       <RouteWithLayout
-        component={DevelopListView}
+        component={FrontendView}
         exact
         layout={MainLayout}
-        path="/develops"
+        path="/frontend"
       />
       <RouteWithLayout
-        component={DashboardView}
+        component={VueView}
         exact
         layout={MainLayout}
-        path="/dashboard"
+        path="/vue"
       />
       <RouteWithLayout
-        component={UserListView}
+        component={ReactView}
         exact
         layout={MainLayout}
-        path="/users"
+        path="/react"
       />
       <RouteWithLayout
-        component={ProductListView}
+        component={JavascriptView}
         exact
         layout={MainLayout}
-        path="/products"
+        path="/javascript"
       />
       <RouteWithLayout
-        component={TypographyView}
+        component={CssView}
         exact
         layout={MainLayout}
-        path="/typography"
+        path="/css"
       />
       <RouteWithLayout
-        component={IconsView}
+        component={PolymerView}
         exact
         layout={MainLayout}
-        path="/icons"
+        path="/polymer"
       />
       <RouteWithLayout
-        component={AccountView}
+        component={NodejsView}
         exact
         layout={MainLayout}
-        path="/account"
+        path="/nodejs"
       />
       <RouteWithLayout
-        component={SettingsView}
+        component={BackendView}
         exact
         layout={MainLayout}
-        path="/settings"
+        path="/backend"
       />
       <RouteWithLayout
-        component={SignUpView}
+        component={MarkdownViewerView}
         exact
-        layout={MinimalLayout}
-        path="/sign-up"
+        layout={MainLayout}
+        path="/markdown"
       />
       <RouteWithLayout
-        component={SignInView}
+        component={WebrtcView}
         exact
-        layout={MinimalLayout}
-        path="/sign-in"
+        layout={MainLayout}
+        path="/webrtc"
       />
       <RouteWithLayout
         component={NotFoundView}

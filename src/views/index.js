@@ -1,11 +1,12 @@
-export { default as DevelopList } from './DevelopList';
-export { default as Account } from './Account';
-export { default as Dashboard } from './Dashboard';
-export { default as Icons } from './Icons';
+export { default as Frontend } from './Frontend';
+export { default as Vue } from './Vue';
+export { default as ReactView } from './ReactView';
+export { default as Javascript } from './Javascript';
+export { default as Css } from './Css';
+export { default as Polymer } from './Polymer';
+export { default as Nodejs } from './Nodejs';
+export { default as Backend } from './Backend';
+export { default as Webrtc } from './Webrtc';
+export { default as MarkdownViewer } from './MarkdownViewer';
+
 export { default as NotFound } from './NotFound';
-export { default as ProductList } from './ProductList';
-export { default as Settings } from './Settings';
-export { default as SignIn } from './SignIn';
-export { default as SignUp } from './SignUp';
-export { default as Typography } from './Typography';
-export { default as UserList } from './UserList';

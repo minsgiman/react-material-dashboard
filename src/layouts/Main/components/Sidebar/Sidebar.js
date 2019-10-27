@@ -42,35 +42,50 @@ const Sidebar = props => {
 
   const pages = [
     {
-      title: 'Develops',
-      href: '/develops',
+      title: 'Frontend',
+      href: '/frontend',
       icon: <ImageIcon />
     },
     {
-      title: 'Dashboard',
-      href: '/dashboard',
+      title: 'Vue',
+      href: '/vue',
       icon: <DashboardIcon />
     },
     {
-      title: 'Users',
-      href: '/users',
+      title: 'React',
+      href: '/react',
       icon: <PeopleIcon />
     },
     {
-      title: 'Products',
-      href: '/products',
+      title: 'Javascript',
+      href: '/javascript',
       icon: <ShoppingBasketIcon />
     },
     {
-      title: 'Account',
-      href: '/account',
+      title: 'CSS',
+      href: '/css',
       icon: <AccountBoxIcon />
     },
     {
-      title: 'Settings',
-      href: '/settings',
+      title: 'Polymer',
+      href: '/polymer',
       icon: <SettingsIcon />
-    }
+    },
+    {
+      title: 'NodeJS',
+      href: '/nodejs',
+      icon: <ImageIcon />
+    },
+    {
+      title: 'Backend',
+      href: '/backend',
+      icon: <DashboardIcon />
+    },
+    {
+      title: 'WebRTC',
+      href: '/webrtc',
+      icon: <PeopleIcon />
+    },
   ];
 
   return (

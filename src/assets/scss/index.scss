@@ -23,10 +23,34 @@ a {
   height: 100%;
 }
 
+.dev-title {
+  margin: 15px 0;
+}
+span.table-count {
+  padding-left:12px;
+}
+.MuiTableCell-sizeSmall {
+  width:12%;
+}
+.MuiTableCell-root.MuiTableCell-body {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  word-break:break-word;
+}
+.MuiTableRow-root.MuiTableRow-hover {
+  cursor:pointer;
+}
+.MuiCardContent-root div {
+  min-width:0!important;
+}
+
 .markdown_root {
   padding:10px;
   .markdown_content {
     padding:18px;
     background:white;
+    h1 {
+      margin-bottom:40px;
+    }
   }
 }

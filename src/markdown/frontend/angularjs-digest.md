@@ -68,4 +68,4 @@ element.bind('click', function() {
 
 ### 참조
  * AngularJS watch-how-the-apply-runs-a-digest<br>
-<http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/>
+<http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/>   
