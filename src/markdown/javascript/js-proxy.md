@@ -33,7 +33,7 @@ function GeoCoder() {
 }
 ```
 <br>
- 
+
 ## Proxy 객체의 구현
 
 ```js
@@ -68,7 +68,7 @@ var log = (function() {
 })();
 ```
 <br>
- 
+
 ## Proxy 객체 사용
 
 ```js

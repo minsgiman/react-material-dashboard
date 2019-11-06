@@ -21,7 +21,7 @@ $('#box').animate({width:'500px', opacity:0.4}, 1000)
          .animate({height:'300px'}, {duration:1000, queue:false});
 ```
 <br>
-                         
+
 ## queue함수의 활용
 
 * 아래와 같이 .queue()를 활용하여 순차적으로 애니매이션을 적용할 수 도 있다.

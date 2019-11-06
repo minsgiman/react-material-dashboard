@@ -7,8 +7,9 @@
 * 실제 구현내용은 각각의 Event Procedure(이벤트처리함수)로 분리한 것이다.
 
 * WIN32 API의 메시지루프에서 각 메시지 처리 함수로 메시지를 보내주고 이를 처리하는 구조와 비슷하다.
+<br><br>
  
-##### 1. 각 Page 마다 자신의 Event Procedure를 가지고 있다.<br>다음 우선순위 Procedure에 이벤트를 보내줄지 아니면 여기서 이벤트처리를 끊을 것인지는 consumed로 결정한다.
+#### 1. 각 Page 마다 자신의 Event Procedure를 가지고 있다.<br>다음 우선순위 Procedure에 이벤트를 보내줄지 아니면 여기서 이벤트처리를 끊을 것인지는 consumed로 결정한다.
 
 ```js
 eventHandler : function(event) {
@@ -33,7 +34,7 @@ eventHandler : function(event) {
 }
 ```
 
-##### 2. 각 Page 생성시 Event Procedure를 등록해 놓고, Service 모듈등에서 fireEvent를 호출하면, fireEvent내에서 순차적으로 등록해 놓은 Procedure에 Event를 보내는 구조다.
+#### 2. 각 Page 생성시 Event Procedure를 등록해 놓고, Service 모듈등에서 fireEvent를 호출하면, fireEvent내에서 순차적으로 등록해 놓은 Procedure에 Event를 보내는 구조다.
 
 ```js
 fireEvent : function(event, targetPageName) {
@@ -56,7 +57,7 @@ fireEvent : function(event, targetPageName) {
 }
 ```
 
-##### 3. Page는 동시에 여러개가 떠 있을 수 있다.<br>단, hash 값이랑 매핑되는 Page는 한순간에 하나만 운영되어야 해서, Center Page로 지정하고, 새로운 Center Page가 만들어지면 기존의 Center Page는 Destroy한다.
+#### 3. Page는 동시에 여러개가 떠 있을 수 있다.<br>단, hash 값이랑 매핑되는 Page는 한순간에 하나만 운영되어야 해서, Center Page로 지정하고, 새로운 Center Page가 만들어지면 기존의 Center Page는 Destroy한다.
  
 ```js
 changeCenterPage : function(pageName, data, loadCb) {

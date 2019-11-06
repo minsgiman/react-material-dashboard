@@ -3,8 +3,9 @@
 ## 다국어 지원
 
 * 다국어 지원을 위하여 jquery.li18n 라이브러리를 사용하였다.
+<br><br>
  
-##### jquery.li18n에 단어별 ID를 등록하고 사용한다. 
+#### jquery.li18n에 단어별 ID를 등록하고 사용한다. 
 
 ```js
 $.li18n.translations = {
