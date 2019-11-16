@@ -1,6 +1,6 @@
 # viewport meta tag를 이용한 모바일 브라우저 레이아웃 설정
 
-## 기본 viewport meta tag 설정 옵션 
+### 기본 viewport meta tag 설정 옵션 
 
 * height와 width는 viewport의 크기를 나타낸다. device크기로 설정할 수 있다. 
   
@@ -10,20 +10,19 @@
   
 * maximum-scale, minimum-scale, user-scalable은 사용자가 얼마나 페이지를 줌-인,아웃 할수 있는지 조정한다.
 
-```js        
-<meta name="viewport"
-  content="
-      height = [pixel_value | "device-height"] ,
-      width = [pixel_value | "device-width"] ,
-      initial-scale = float_value ,
-      minimum-scale = float_value ,
-      maximum-scale = float_value ,
-      user-scalable = ["yes" | "no"]"
-/>
-```
+        <meta name="viewport"
+          content="
+              height = [pixel_value | "device-height"] ,
+              width = [pixel_value | "device-width"] ,
+              initial-scale = float_value ,
+              minimum-scale = float_value ,
+              maximum-scale = float_value ,
+              user-scalable = ["yes" | "no"]"
+        />
+
 <br>
 
-## width, height 옵션
+### width, height 옵션
 
 * width를 설정하지 않으면 대부분 모바일 브라우저는 980 pixel 기준으로 그린다. 모바일 브라우저에서 가장 많이 사용하는 렌더링 엔진이 Webkit 기반이기 때문인데, Webkit은 980 pixels을 사용한다.
         
@@ -34,7 +33,7 @@
 * (width=device-width, initial-scale=1.0으로 설정하는 경우) -> 디바이스 사이즈가 320 pixels 이므로, Visible area와 Viewport size가 같게 되어 320 pixels 크기로 그려진 강아지가 화면에 꽉 차게 그려진다.
 <br><br>
 
-## 모든 viewport 옵션을 꼭 설정하지 않아도 된다.
+### 모든 viewport 옵션을 꼭 설정하지 않아도 된다.
 
 * 일부 값이 설정되면 대부분 브라우저는 다른 값을 추론한다.
    

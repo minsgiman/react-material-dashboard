@@ -1,13 +1,11 @@
 # NodeJS 파일 읽기 및 쓰기에 필요한 모든 내용
- 
-***
 
-#### 1. file system 모듈
+### 1. file system 모듈
 
  - fs 모듈을 통해 파일 읽기, 쓰기 등 여러가지 파일제어 기능들을 사용할 수 있다.
- - NodeJS에서 기본적인 파일 읽기, 쓰기 코드를 확인해본다.
  
-    
+ - NodeJS에서 기본적인 파일 읽기, 쓰기 코드를 확인해본다.
+     
         var fs = require('fs');
         
         //동기적 방식 파일 읽기
@@ -49,10 +47,9 @@
                 console.log('success');   
             }
         });
-
-.        
+<br>
         
-#### 2. file read & write stream
+### 2. file read & write stream
 
  - nodejs의 stream을 통해서 파일의 모든 내용을 메모리에 버퍼로 잡지않고서, client에게 스트리밍 해줄 수 있다.
  - nodejs에는 4가지 기초 스트림 타입이 있다. (Readable, Writable, Duplex, Transform)
@@ -60,7 +57,6 @@
  - 읽기 가능한 스트림에는 data 이벤트, end 이벤트가 존재한다.
  - 쓰기 가능한 스트림에는 drain 이벤트, finish 이벤트가 존재한다.
  
-        
         /* Client요청에 Streaming으로 파일 전송하기 */
         app.route('/stringXlsx').get(function (req, res) {
             //전송할 파일명을 string.xlsx로 설정한다.
@@ -72,7 +68,7 @@
             var readStream = fs.createReadStream('./string.xlsx');
             readStream.pipe(res);
         });
- 
+    
         
         /* Writable Stream에 data 쓰기 */ 
         // 쓰기 스트림을 생성한다. 쓰기 대상 파일명은 './locale-ja.json'
@@ -102,9 +98,9 @@
             .pipe(fs.createWriteStream(file.slice(0, -3))
             .on('finish', () => console.log('Done'));
 
-.
+<br>
 
-#### 3. form을 통한 파일 업로드 처리
+### 3. form을 통한 파일 업로드 처리
 
  - formidable 모듈은 client로 부터 전송받는 form data를 파싱하기 위해 사용한다. 특히 file upload 처리에 유용하다.
  - Formidable.IncomingForm : 요청 분석 클래스
@@ -140,9 +136,9 @@
             });
         });
 
-. 
- 
-#### 4. .xlsx 파일 읽기
+<br>
+
+### 4. .xlsx 파일 읽기
 
  - xlsx 모듈을 통해 .xlsx(엑셀) 파일을 읽을 수 있다.
  
@@ -155,24 +151,24 @@
         var xlDataArray = xlsx.utils.sheet_to_json(excel.Sheets[sheet_name_list[0]]);
         console.log(xlDataArray);
 
-.
+<br>
 
 ***
 
 ### 참조
 
    - file system 모듈
-   
+    <br>
     <https://nodejs.org/api/fs.html>
 
    - Node.js Streams
-
+    <br>
     <https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93>
 
    - formidable npm
-
+    <br>
     <https://www.npmjs.com/package/formidable>
 
    - xlsx npm
-
+    <br>
     <https://www.npmjs.com/package/xlsx>

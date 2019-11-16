@@ -1,7 +1,5 @@
 # webpack 사용
 
-***
-
 ### webpack을 사용하는 이유
 
  - 하나의 파일로 js를 쉽게 번들할 수 있다.
@@ -12,8 +10,8 @@
  - JS로 모든 유형의 파일을 포함할 수 있다. (require)
  - 그 밖의 수 많은 기능들?
  
-.
- 
+<br>
+
 ### 왜 이런 기능이 필요?
  
  - js파일번들 - 자바스크립트를 모듈로 작성. 각각의 파일에 대해 <script>태그를 별도로 작성할 필요가 없다.
@@ -22,7 +20,7 @@
  - JS로 모든 유형의 파일을 포함 - 추가적인 빌드도구의 수를 줄일 수 있고, 프로그램적으로 파일을 사용 및 수정할 수 있다.
  - ES6/ES7, LESS, SCSS - 쉽게 사용할 수 있다. (babel, scss 로더만 추가해주면)
  
-.
+<br>
 
 ### webpack.config.js에 설정
 
@@ -33,7 +31,6 @@
  - module.loaders 에 로더를 포함시켜줘야 원하는 파일유형을 js에서 require할 수 있다. (include는 해당 경로에 있는 파일에만 해당 로더를 적용)
  - devServer는 개발서버를 돌리는데 필요한 정의
  
-
         // webpack.config.dev.js
         var path = require('path')
         var webpack = require('webpack')
@@ -67,8 +64,7 @@
             hot: true
           }
         }
-            
-.
+<br>
 
 ### 느낀점
 
@@ -76,14 +72,14 @@
  - ES6/ES7, LESS, SCSS를 사용하는데 있어서도, 간단히 로더만 설치하고 포함해주면 되어 사용하는데 더욱 편리함을 느꼈다.
  - commonJS를 지원하여 js를 모듈화하고, 여러 형태의 파일을 js에서 포함할 수 있는 것 또한 매력적이다.
 
-.
+<br>
 
 ***
 
 ### 참조
 
  - WebpackTutorial
- 
+  <br>
   <https://github.com/AriaFallah/WebpackTutorial>
 
 

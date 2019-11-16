@@ -1,7 +1,5 @@
 # Polymer Observe
 
-*** 
-
 ### Simple Observer
 
  - 각 property의 observer에 콜백을 연결해준다. 
@@ -21,11 +19,12 @@
              this.highlight = true;
            },
 
-.
+<br>
 
 ### Complex Observer
 
  - observers를 선언하여, parameter로 property들의 path를 지정해주면, 여러개의 property를 동시에 감시할 수 있다.
+ 
  - 여러개를 동시에 감시하는 경우 하나의 property value만 변경되어도 콜백이 불린다.
 
         Polymer({

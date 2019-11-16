@@ -1,11 +1,11 @@
 # IE에서 axios, vuex 사용시 에러 수정하기
 
-## 1. axios, vuex 사용시, 구형 IE 에러
+### 1. axios, vuex 사용시, 구형 IE 에러
 
 * 'Promise'가 정의되지 않았습니다. 에러가 발생한다. axios와 vuex는 IE를 지원하지 않는다.
 <br><br>
  
-## 2. es6-promise 설치를 통한 해결방법
+### 2. es6-promise 설치를 통한 해결방법
 
 * 1) 설치 : **npm install es6-promise --save**
  

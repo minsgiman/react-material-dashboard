@@ -1,13 +1,11 @@
 # HTML Popup 띄우는 방법
 
-## 1. HTML Popup 창 띄우기
+### 1. HTML Popup 창 띄우기
 
-```js
-window.open("파일명", "팝업이름", "옵션설정");
-```
+        window.open("파일명", "팝업이름", "옵션설정");
 <br>
 
-## 2. 옵션 List
+### 2. 옵션 List
 
 * left : 좌측부터 팝업의 위치를 지정
 
@@ -32,14 +30,12 @@ window.open("파일명", "팝업이름", "옵션설정");
 * channelmode : 채널모드로 화면 출력
 <br><br>
 
-## 3. 옵션 설정하기
+### 3. 옵션 설정하기
 
 * 속성의 값은 yes, no 또는 0, 1을 사용하여 설정이 가능
 
-```js
-<script type="text/javascript">
-   // 팝업을 띄우기, width 300, height 400, 스크롤바, 툴바, 메뉴바를 모두 숨기는 경우
-   window.open('popup.html', 'popup01', 'width=300, height=400, scrollbars= 0, toolbar=0, menubar=no'); 
-</script>
-```
+        <script type="text/javascript">
+           // 팝업을 띄우기, width 300, height 400, 스크롤바, 툴바, 메뉴바를 모두 숨기는 경우
+           window.open('popup.html', 'popup01', 'width=300, height=400, scrollbars= 0, toolbar=0, menubar=no'); 
+        </script>
 

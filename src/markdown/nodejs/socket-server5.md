@@ -1,19 +1,18 @@
 # Socket 서버 구현 5 (Zookeeper Client, Kafka Producer)
- 
-***
 
-#### 1. Zookeeper Client 사용
+### 1. Zookeeper Client 사용
 
  - Zookeeper 서버로부터 연동서버들의 IP주소, Port, 상태정보를 읽어오는 목적으로 사용하였다.
+ 
  - Zookeeper 서버에 현재서버의 IP주소, Port, 상태정보를 업데이트 하는 목적으로 사용하였다.
 
-.
+<br>
 
-#### 2. Zookeeper Client 구현
+### 2. Zookeeper Client 구현
 
  - node-zookeeper-client 모듈을 사용하였다.
- - Zookeeper Client를 통해 Zookeeper에서 트리형태로 관리하고 있는 노드 데이터를 읽어오고, 업데이트한다. (zclient.exists, zclient.setData, zclient.getChildren)
  
+ - Zookeeper Client를 통해 Zookeeper에서 트리형태로 관리하고 있는 노드 데이터를 읽어오고, 업데이트한다. (zclient.exists, zclient.setData, zclient.getChildren)
  
         var zooKeeper = require ("node-zookeeper-client");
         
@@ -73,15 +72,15 @@
             }
           );
         }
- 
-.
+<br>
 
-#### 3. Kafka Producer
+### 3. Kafka Producer
 
  - Kafka Producer API를 사용해 Kafka Broker에 메시지를 보낸다.
- - node-rdkafka 모듈을 사용하였다. 메시지를 모아서 배치로 전송가능하다.
- - producer.produce(topic, partition, msg, key, timestamp, opaque) 로 메시지를 전송한다.
  
+ - node-rdkafka 모듈을 사용하였다. 메시지를 모아서 배치로 전송가능하다.
+ 
+ - producer.produce(topic, partition, msg, key, timestamp, opaque) 로 메시지를 전송한다.
  
         var kafka = require('node-rdkafka');
  
@@ -161,5 +160,3 @@
                 callback(1);
             }
         };
-
-.

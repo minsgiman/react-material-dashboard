@@ -1,40 +1,39 @@
 # npm에 모듈 배포하기 2  (진입점 main 파일 구현)
+
 **[진입점이 되는 main 파일을 UMD 포맷과 ES6 module 포맷으로 구현하여, 모든 환경에서 해당 모듈을 사용할 수 있도록 지원한다.]**
 <br><br>
 
-## UMD main 파일 구현
+### UMD main 파일 구현
 
 * UMD (Universal Module Definition) Pattern이란? : AMD (requireJS), CommonJS (node), 일반 browser 환경에서 통합해서 쓸 수 있는 javascript module pattern 이다.
 
-```js
- /*** api.common.js ***/
- 
- (function (root, factory) {
-   if (typeof define === 'function' && define.amd) {
-     // AMD. Register as an anonymous module.
-     define(['b'], factory);
-   } else if (typeof module === 'object' && module.exports) {
-     // Node. Does not work with strict CommonJS, but
-     // only CommonJS-like environments that support module.exports,
-     // like Node.
-     module.exports = factory(require('b'));
-   } else {
-     // Browser globals (root is window)
-     root.returnExports = factory(root.b);
-   }
- }(this, function (b) {
-   //use b in some fashion.
- 
-   // Just return a value to define the module export.
-   // This example returns an object, but the module
-   // can return a function as the exported value.
-   return {};
- }));
- ```
+         /*** api.common.js ***/
+        
+         (function (root, factory) {
+           if (typeof define === 'function' && define.amd) {
+             // AMD. Register as an anonymous module.
+             define(['b'], factory);
+           } else if (typeof module === 'object' && module.exports) {
+             // Node. Does not work with strict CommonJS, but
+             // only CommonJS-like environments that support module.exports,
+             // like Node.
+             module.exports = factory(require('b'));
+           } else {
+             // Browser globals (root is window)
+             root.returnExports = factory(root.b);
+           }
+         }(this, function (b) {
+           //use b in some fashion.
+         
+           // Just return a value to define the module export.
+           // This example returns an object, but the module
+           // can return a function as the exported value.
+           return {};
+         }));
      
 <br>
 
-## ES6 module main 파일 구현
+### ES6 module main 파일 구현
 
 ```js
 /**** api.esm.js ***/
@@ -49,24 +48,23 @@ export { account, camera, clip, demo, notice };
 ```    
 <br>
 
-## Webpack 설정 (webpack.config.js 작성)
+### Webpack 설정 (webpack.config.js 작성)
 
 * entry에 위에서 작성한 bundle의 진입점이 되는 main파일을 지정한다. (포맷별 main파일)
  
 * output의 libraryTarget을 'umd'로 설정하고, path, filename을 지정한다.
- 
-```js
-entry: {
-    "api.common.min" : './../src/api.common.js',
-    "api.esm.min" : './../src/api.esm.js'
-},
-...
-output: {
-    libraryTarget: 'umd',
-    path: path.resolve(__dirname, './../dist'),
-    filename: '[name].js'
-}
-```
+
+        entry: {
+            "api.common.min" : './../src/api.common.js',
+            "api.esm.min" : './../src/api.esm.js'
+        },
+        ...
+        output: {
+            libraryTarget: 'umd',
+            path: path.resolve(__dirname, './../dist'),
+            filename: '[name].js'
+        }
+
 
 <br>
 

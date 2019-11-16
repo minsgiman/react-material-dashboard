@@ -1,27 +1,21 @@
 # WebRTC Peer 구현
- 
-***
 
-.
-
-#### 1. WebRTC Peer API
+### 1. WebRTC Peer API
 
  - WebRTC는 표준화된 프로토콜과 Javascript API를 통해서, 3rd party 플러그인을 사용하지 않고 브라우저를 통해 peer간의 audio, video, data를 통신할 수 있게 해준다.
- - 브라우저는 WebRTC를 지원하기 위해 다음의 주요 API들을 제공한다. 
  
+ - 브라우저는 WebRTC를 지원하기 위해 다음의 주요 API들을 제공한다. 
  
         * getUserMedia : local audio와 video stream을 가져온다.
         * MediaStream : audio와 video stream을 객체화 한다.
         * MediaStreamTrack : MediaStream을 구성하는 각각의 track.
         * RTCPeerConnection : peer-to-peer연결과 audio와 video data의 통신을 지원.
         * RTCDataChannel : application data 통신을 지원.
-      
-.
+<br>
 
-#### 2. getUserMedia API
+### 2. getUserMedia API
 
 - getUserMedia를 통해서 application에서 필요한 audio와 video stream을 가져올 수 있다. (constraints를 통해 필요한 stream을 제한 또는 설정할 수 있다.)
-
 
         <video autoplay></video> 
         
@@ -50,11 +44,9 @@
         
           function logError(error) { ... }
         </script>
+<br>
 
-
-.
-
-#### 3. RTCPeerConnection API
+### 3. RTCPeerConnection API
 
 - **RTCPeerConnection API**는 peer-to-peer 연결의 전체 life cycle을 담당하는 API이다.
 
@@ -73,8 +65,7 @@
     3) ICE agent는 TURN서버를 last candidate로 추가하고, peer간의 직접 연결이 실패할 경우 TURN 서버를 통해 data가 relay된다.
         
 - offer, answer, candidate 을 교환하는 signalling 과정이 끝나면 **ICE agent**를 통해 peer-to-peer 연결이 이루어지고, peer간의 통신을 시작한다.
-        
-        
+
         /**** Caller Code ****/
         <video id="local_video" autoplay></video> 
         <video id="remote_video" autoplay></video> 
@@ -128,8 +119,6 @@
           function logError() { ... }
         </script>
 
-
-
         /**** Callee Code ****/
         <video id="local_video" autoplay></video>
         <video id="remote_video" autoplay></video>
@@ -182,7 +171,7 @@
           function logError() { ... }
         </script>
 
-.
+<br>
 
 ***
 

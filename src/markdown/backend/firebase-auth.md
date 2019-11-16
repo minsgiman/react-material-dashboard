@@ -1,12 +1,9 @@
-# Firebase Authentication 사용하기
-
-*** 
+# Firebase Authentication 사용하기 
 
 #### 먼저 firebase의 Authentication 탭의 로그인 방법 메뉴에서 이메일/비밀번호를 "사용 설정됨"으로 활성화 해준다.
 
 ![object](./../images/develop/fb-auth.png "object")
-
-.
+<br><br>
 
 #### email과 password로 로그인한다.
 
@@ -22,8 +19,7 @@
             var promise = auth.signInWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
         });
-
-.
+<br>
 
 #### 사용자 계정 만들기
 
@@ -37,8 +33,7 @@
             var promise = auth.createUserWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
         });
-        
-.
+<br>
         
 #### 인증상태 변경 감시
 
@@ -54,8 +49,7 @@
              console.log('not logged in');
             }
         });
-
-.
+<br>
    
 #### 로그아웃
     
@@ -65,14 +59,13 @@
             firebase.auth().signOut();
         });
 
-.
+<br>
 
 ***         
          
 ### 참조
 
- - 웹에서 파이어베이스 인증 사용하기 - 파이어캐스트
- 
+ - 웹에서 파이어베이스 인증 사용하기 - 파이어캐스트<br>
    <https://www.youtube.com/watch?v=-OKrloDzGpU&index=4&list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX>
 
     

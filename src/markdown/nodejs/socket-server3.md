@@ -1,13 +1,11 @@
 # Socket 서버 구현 3 (Logging)
  
-***
-
-#### 1. Winston 모듈
+### 1. Winston 모듈
 
  - winston 모듈을 사용하여 1일 기준으로 로그 파일이 로테이션 되도록 설정하였다.
- - 로그파일은 'control_2018-02-12.log' 와 같이 생성된다.
-  
  
+ - 로그파일은 'control_2018-02-12.log' 와 같이 생성된다.
+
         var winston = require('winston');
  
         logger = new winston.Logger( {
@@ -64,14 +62,14 @@
              exitOnError: false
         });
  
-.
+<br>
 
-#### 2. Master로 Log메시지 전송 및 Master의 Logging 관리
+### 2. Master로 Log메시지 전송 및 Master의 Logging 관리
 
  - winston을 통하여 logging 파일을 생성하고, 기록하는 일은 Master Process 한 곳에서 관리한다.
- - Worker Process들 에서는 IPC 통신으로 Master에 Log메시지를 전송하고, Master에서 Log메시지를 받아 파일에 기록한다.
  
-     
+ - Worker Process들 에서는 IPC 통신으로 Master에 Log메시지를 전송하고, Master에서 Log메시지를 받아 파일에 기록한다.
+
          /** Master Process 코드 **/
     
          var processLoggingMsg = function (message) {

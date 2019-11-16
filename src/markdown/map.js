@@ -1,7 +1,6 @@
 const frontend = [
     {title : 'Webpack Tree Shaking & Dynamic Import', fileUrl : '/frontend/webpack-treeshaking.md'},
     {title : '크롬 개발자 도구를 사용한 웹 성능분석', fileUrl : '/frontend/chrome-debugging-tool.md'},
-    {title : 'IE에서 axios, vuex 사용시 에러 수정하기', fileUrl : '/frontend/howto_use_vuex_inIE.md'},
     {title : 'npm에 모듈 배포하기 1', fileUrl : '/frontend/upload-to-npm-1.md'},
     {title : 'npm에 모듈 배포하기 2', fileUrl : '/frontend/upload-to-npm-2.md'},
     {title : 'npm에 모듈 배포하기 3', fileUrl : '/frontend/upload-to-npm-3.md'},
@@ -11,7 +10,7 @@ const frontend = [
     {title : 'AngularJS의 $watch, $apply, $digest 동작', fileUrl : '/frontend/angularjs-digest.md'},
     {title : 'Client side 렌더링과 Server side 렌더링', fileUrl : '/frontend/serverside-rendering.md'},
     {title : 'Gulp를 통한 model명 별로 빌드하기', fileUrl : '/frontend/gulp-model-build.md'},
-    {title : 'Webpack 사용해보기', fileUrl : '/frontend/webpack.md'},
+    {title : 'Webpack 사용', fileUrl : '/frontend/webpack.md'},
     {title : 'MAC에서 IE테스트 환경 만들기', fileUrl : '/frontend/mac-ie-test.md'},
     {title : '크로스 브라우저 테스트를 위한 Browsersync', fileUrl : '/frontend/browser-sync.md'},
     {title : 'TDD & BDD', fileUrl : '/frontend/tdd-bdd.md'},
@@ -25,7 +24,8 @@ const frontend = [
     {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 1', fileUrl : '/vue/migrate-from-angular-to-vue-1.md'},
     {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 2', fileUrl : '/vue/migrate-from-angular-to-vue-2.md'},
     {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 3', fileUrl : '/vue/migrate-from-angular-to-vue-3.md'},
-    {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 4', fileUrl : '/vue/migrate-from-angular-to-vue-4.md'}
+    {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 4', fileUrl : '/vue/migrate-from-angular-to-vue-4.md'},
+    {title : 'IE에서 axios, vuex 사용시 에러 수정하기', fileUrl : '/vue/howto_use_vuex_inIE.md'},
   ],
   react = [
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
@@ -86,9 +86,9 @@ const frontend = [
     {title : 'tcpdump 사용', fileUrl : '/backend/tcpdump.md'},
     {title : 'linux 프로세스 실행 옵션', fileUrl : '/backend/linux-process-execute.md'},
     {title : 'netcat을 사용한 udp 포트 연결 체크', fileUrl : '/backend/udp-port-check.md'},
-    {title : 'Firebase Realtime DB사용', fileUrl : '/firebase/firebase-realtime-db.md'},
-    {title : 'Firebase Realtime DB사용2', fileUrl : '/firebase/firebase-realtime-db2.md'},
-    {title : 'Firebase 인증', fileUrl : '/firebase/firebase-auth.md'}
+    {title : 'Firebase Realtime DB사용', fileUrl : '/backend/firebase-realtime-db.md'},
+    {title : 'Firebase Realtime DB사용2', fileUrl : '/backend/firebase-realtime-db2.md'},
+    {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
   webrtc = [
     {title : 'WebRTC Peer 구현', fileUrl : '/webrtc/rtcpeer_implement.md'},

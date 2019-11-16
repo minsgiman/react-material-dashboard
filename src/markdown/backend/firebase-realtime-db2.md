@@ -1,7 +1,5 @@
 # Firebase Realtime Database 사용하기2
 
-*** 
-
 #### Child Data Add 이벤트 연결
 
  - child_added 이벤트는 child Data가 추가되었을 때 발생하고, snap은 추가된 아이템 Data 하나에 대한 객체이다.
@@ -20,7 +18,7 @@
             ulList.appendChild(li);
         });
 
-.
+<br>
 
 #### Child Data Changed 이벤트 연결
 
@@ -33,7 +31,7 @@
             liChanged.innerText = snap.val();
         });
     
-. 
+<br>
 
 #### Child Data Removed 이벤트 연결
 
@@ -45,12 +43,11 @@
             liRemoved.remove();
         });
     
-.
+<br>
 
 ***         
          
 ### 참조
 
- - Getting Started with the Firebase Realtime Database on the Web, Part 2 - Firecasts
- 
+ - Getting Started with the Firebase Realtime Database on the Web, Part 2 - Firecasts<br>
    <https://www.youtube.com/watch?v=dBscwaqNPuk&index=3&list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX>

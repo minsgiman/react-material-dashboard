@@ -1,19 +1,24 @@
-#Web Component의 필요
+# Web Component란 무엇인가
 
-##### Web App 구현에는 복잡해져가는 마크업과 스타일, JS가 존재한다.
-##### 다른 프로젝트에서 사용했던 아이템들을 재활용하려면 마크업을 복사 수정하고 스타일링을 새로하거나, JS를 최대한 모듈화하여 사용해야 한다.
-##### 이것은 개발자의 역량에 의존하는 근본적인 재활용 방법이 아니다.
-##### 자주 사용되는 유용한 것들 혹은 구조상 분리가 필요한 것들을 다른 요소들과 충돌하지 않는 형태로 재활용 가능하게 해주는 것이 필요하다!
-##### UI요소가 많은 FrontEnd 개발에서는 *분리되어 있는 HTML, CSS, JS를 하나로 묶어주어서 캡슐화* 해 수 있는 것 또한 필요하다!
-##### *W3C*에서 컴포넌트 기술을 웹에서 적용할 수 있도록 새로운 규격의 집합을 만들었고 이것을 *웹 컴포넌트(Web Component)*라고 한다.
+## Web Component의 필요
 
-.
+* Web App 구현에는 복잡해져가는 마크업과 스타일, JS가 존재한다.
 
-.
+* 다른 프로젝트에서 사용했던 아이템들을 재활용하려면 마크업을 복사 수정하고 스타일링을 새로하거나, JS를 최대한 모듈화하여 사용해야 한다.
 
-# Web Component의 4가지 규격
+* 이것은 개발자의 역량에 의존하는 근본적인 재활용 방법이 아니다.
 
-## 1. Custom Elements - *커스텀 태그를 통한 요소 생성*
+* 자주 사용되는 유용한 것들 혹은 구조상 분리가 필요한 것들을 다른 요소들과 충돌하지 않는 형태로 재활용 가능하게 해주는 것이 필요하다!
+
+* UI요소가 많은 FrontEnd 개발에서는 *분리되어 있는 HTML, CSS, JS를 하나로 묶어주어서 캡슐화* 해 수 있는 것 또한 필요하다!
+
+* *W3C*에서 컴포넌트 기술을 웹에서 적용할 수 있도록 새로운 규격의 집합을 만들었고 이것을 *웹 컴포넌트(Web Component)*라고 한다.
+
+<br>
+
+## Web Component의 4가지 규격
+
+### 1. Custom Elements - *커스텀 태그를 통한 요소 생성*
 
 #### 1) 새로운 HTML 요소를 생성
 
@@ -48,9 +53,9 @@
             });
         </script>
 
-.
+<br>
 
-## 2. HTML Imports - *외부 리소스를 포함하기 위한 기능 제공*
+### 2. HTML Imports - *외부 리소스를 포함하기 위한 기능 제공*
 
 #### 1) <link rel="import" href="my-develop.html"> 설정을 <head> 태그안에 둔다.
 
@@ -77,9 +82,9 @@
             </script>
         </dom-module>
 
-.
+<br>
 
-## 3. HTML Templates - *컴포넌트 골격이 사용 전까지 비활성화 상태로 관리*
+### 3. HTML Templates - *컴포넌트 골격이 사용 전까지 비활성화 상태로 관리*
 
 #### 1) <template> 태그
 
@@ -91,9 +96,9 @@
    
    - <template> 태그는 크롬과 몇개 브라우져만 지원하고 있다. 그러나 이것 역시 polyfill을 설치하면 모든 브라우져에서 수행가능함.
    
-.
+<br>
 
-## 4. Shadow DOM - *DOM과 Style의 캡슐화*
+### 4. Shadow DOM - *DOM과 Style의 캡슐화*
 
 #### 1) 별도의 스코프를 갖는 DOM
 
@@ -113,24 +118,24 @@
    
    - webcomponents.js 파일 같은 경우가 polyfill 파일이고 이것을 로드하면 Shadow DOM에 대해 모든 브라우져에서 사용할 수 있다.
 
-.
+<br>
 
 ***
 
 ### 참조
 
    - 웹 컴포넌트: 차세대 프론트엔드 웹 개발로 가는 관문(Web Component: the Gate to Next Front-end Web Developments)
-
+    <br>
     <http://html5rocksko.blogspot.kr/2014/02/mashup-web-component-evolution-of-web-development.html>
 
    - HTML's New Template Tag
-
+    <br>
     <https://www.html5rocks.com/ko/tutorials/webcomponents/template>
 
    - 알아봅시다, polymer
-
+    <br>
     <http://www.slideshare.net/cwdoh/polymer-web-components-web-animations>
 
    - 웹 컴포넌트 개념잡기
-
+    <br>
     <http://mobicon.tistory.com/440>

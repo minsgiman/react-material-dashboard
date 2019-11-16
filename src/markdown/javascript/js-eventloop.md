@@ -1,6 +1,6 @@
 # Javascript의 Event Loop
 
-## 1. Javascript Engine의 call stack
+### 1. Javascript Engine의 call stack
 
 ```js
 /* main.js */
@@ -28,7 +28,7 @@ secondFunction();
 
 <br><br>
 
-## 2. Event Loop와 Event Table 그리고 Event Queue가 하는 일
+### 2. Event Loop와 Event Table 그리고 Event Queue가 하는 일
 
 ```js
 var firstFunction = function () {  

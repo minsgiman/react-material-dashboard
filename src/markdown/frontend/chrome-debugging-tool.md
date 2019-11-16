@@ -1,6 +1,6 @@
 # 크롬 개발자 도구를 사용한 웹 성능분석
 
-## 1. Performance탭에서 랜더링 과정 확인
+### 1. Performance탭에서 랜더링 과정 확인
 
 ![object](/images/develop/chrome_debug_performance.png "object")
 
@@ -27,7 +27,7 @@
  &nbsp;&nbsp;&nbsp; - (8) Composite
 <br><br>
 
-## 2. Audits탭을 통한 웹 페이지 성능진단
+### 2. Audits탭을 통한 웹 페이지 성능진단
 
 ![object](/images/develop/chrome_debug_audits.png "object")
 
@@ -97,7 +97,7 @@
  &nbsp;&nbsp;&nbsp; - (1) 웹 페이지를 화면에 처음 보여주기 위한 위한 "핵심 렌더링 과정"        
  <br><br>
 
-## 3. Memory탭을 통한 Memory Leak 확인
+### 3. Memory탭을 통한 Memory Leak 확인
 
 ![object](/images/develop/chrome_debug_memory.png "object")
 

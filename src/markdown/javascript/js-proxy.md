@@ -1,6 +1,6 @@
 # Javascript Proxy
 
-## Proxy Design Pattern
+### Proxy Design Pattern
 
 * 프록시는 내부적으로 실제의 객체에 접근할 때 호출되는 래퍼(wrapper) 혹은 대리 객체이다.
 
@@ -11,7 +11,7 @@
 * 아래는 Proxy객체를 통한 로그 캐시 구현 내용이다.
 <br><br>
  
-## 실제 객체 코드
+### 실제 객체 코드
 
 ```js
 function GeoCoder() {
@@ -34,7 +34,7 @@ function GeoCoder() {
 ```
 <br>
 
-## Proxy 객체의 구현
+### Proxy 객체의 구현
 
 ```js
 function GeoProxy() {
@@ -69,7 +69,7 @@ var log = (function() {
 ```
 <br>
 
-## Proxy 객체 사용
+### Proxy 객체 사용
 
 ```js
 function run() {

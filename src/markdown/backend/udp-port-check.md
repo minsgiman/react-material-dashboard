@@ -1,14 +1,12 @@
 # netcat을 사용한 udp 포트 연결 체크 (centos)
- 
-***
 
 ### 1. netcat
 
- - netcat은 TCP, UDP 프로토콜을 사용하는 네트워크 연결에서 데이터를 읽고 쓰는 간단한 유틸리티이다.
+* netcat은 TCP, UDP 프로토콜을 사용하는 네트워크 연결에서 데이터를 읽고 쓰는 간단한 유틸리티이다.
  
- - cat이 파일을 읽듯이 netcat은 network connection 즉 네트워크 연결상태를 읽거나 쓸때 사용된다.
+* cat이 파일을 읽듯이 netcat은 network connection 즉 네트워크 연결상태를 읽거나 쓸때 사용된다.
+<br><br>
 
-.
 
 ### 2. netcat을 사용하여 udp 포트가 열려있는지 체크하는 방법 (centos)
 

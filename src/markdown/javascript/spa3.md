@@ -9,26 +9,20 @@
 * RequireJS는 의존성관리를 지원하여 일일히 script로딩 순서를 신경쓰지 않아도 된다.
 <br><br>
  
-#### 1. 모듈별로 설정한 JS파일의 path들을 paths변수에 저장하고 등록한다.
+* 1) 모듈별로 설정한 JS파일의 path들을 paths변수에 저장하고 등록한다.
 
-```js
-requirejs.config({
-     baseUrl: 'js',
-     paths: paths
-});
-```
+            requirejs.config({
+                 baseUrl: 'js',
+                 paths: paths
+            });
     
-#### 2. 모듈 정의 상단에 의존성이 있는 모듈들을 선언해준다.<br>크게 Page모듈, Service모듈, Component모듈로 나누었다.
+* 2) 모듈 정의 상단에 의존성이 있는 모듈들을 선언해준다.<br>크게 Page모듈, Service모듈, Component모듈로 나누었다.
 
-```js
-define(['service-network', 'cmp-form'], function(srvNetwork, cmpForm) {
-```    
+            define(['service-network', 'cmp-form'], function(srvNetwork, cmpForm) {    
   
-#### 3. 모듈 정의가 아닌 단순히 코드를 실행할 때 의존성은 require 함수를 사용한다. 
+* 3) 모듈 정의가 아닌 단순히 코드를 실행할 때 의존성은 require 함수를 사용한다. 
 
-```js
-requirejs(['pageManager', 'service-gateway'],
-    function(pageManager, srvGateway) {
-        $(document).ready(function() {
-            $(window).on('hashchange', routePage);
-```
+            requirejs(['pageManager', 'service-gateway'],
+                function(pageManager, srvGateway) {
+                    $(document).ready(function() {
+                        $(window).on('hashchange', routePage);
