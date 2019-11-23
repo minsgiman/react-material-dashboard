@@ -42,50 +42,15 @@ const Sidebar = props => {
 
   const pages = [
     {
-      title: 'Frontend',
-      href: '/frontend',
-      icon: <ImageIcon />
-    },
-    {
-      title: 'Vue',
-      href: '/vue',
+      title: 'Develop',
+      href: '/develop',
       icon: <DashboardIcon />
     },
     {
-      title: 'React',
-      href: '/react',
-      icon: <PeopleIcon />
-    },
-    {
-      title: 'Javascript',
-      href: '/javascript',
-      icon: <ShoppingBasketIcon />
-    },
-    {
-      title: 'CSS',
-      href: '/css',
+      title: 'Profile',
+      href: '/profile',
       icon: <AccountBoxIcon />
-    },
-    {
-      title: 'Polymer',
-      href: '/polymer',
-      icon: <SettingsIcon />
-    },
-    {
-      title: 'NodeJS',
-      href: '/nodejs',
-      icon: <ImageIcon />
-    },
-    {
-      title: 'Backend',
-      href: '/backend',
-      icon: <DashboardIcon />
-    },
-    {
-      title: 'WebRTC',
-      href: '/webrtc',
-      icon: <PeopleIcon />
-    },
+    }
   ];
 
   return (

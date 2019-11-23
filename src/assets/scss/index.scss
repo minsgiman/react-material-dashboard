@@ -43,6 +43,15 @@ span.table-count {
 .MuiCardContent-root div {
   min-width:0!important;
 }
+div.MuiCardContent-root:last-child {
+  padding-bottom:0;
+}
+.MuiPaper-root {
+  cursor:pointer;
+}
+.MuiPaper-root:hover p, .MuiPaper-root:hover h4 {
+  color: #4a96e6;
+}
 
 .markdown_root {
   padding:10px;
