@@ -21,7 +21,7 @@ const Minimal = props => {
 
   return (
     <div className={classes.root}>
-      <Topbar />
+      <Topbar className="tnb_wrap"/>
       <main className={classes.content}>{children}</main>
     </div>
   );

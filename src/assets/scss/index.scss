@@ -46,10 +46,10 @@ span.table-count {
 div.MuiCardContent-root:last-child {
   padding-bottom:0;
 }
-.MuiPaper-root {
+.dev-item {
   cursor:pointer;
 }
-.MuiPaper-root:hover p, .MuiPaper-root:hover h4 {
+.dev-item:hover p, .dev-item:hover h4 {
   color: #4a96e6;
 }
 
@@ -60,6 +60,54 @@ div.MuiCardContent-root:last-child {
     background:white;
     h1 {
       margin-bottom:40px;
+    }
+  }
+}
+
+.top-title {
+  color:#fff;
+}
+
+.profile_wrap {
+  section {
+    margin-top: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+    .section_tit {
+      font-size: 22px;
+      color: #333;
+      padding: 28px 30px 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .contents {
+      padding: 30px;
+      color: #666;
+      font-size: 16px;
+      line-height: 32px;
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+        .period {
+          font-size: 16px;
+          font-weight: normal;
+          margin-left: 10px;
+        }
+      }
+      .sub_tit {
+        font-size: 17px;
+        color: #333333;
+      }
+      .project_list {
+        li {
+          margin-top: 30px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          .tech_wrap {
+            margin-top: 6px;
+          }
+        }
+      }
     }
   }
 }

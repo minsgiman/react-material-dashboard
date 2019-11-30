@@ -40,7 +40,7 @@ const DevelopList = () => {
               md={6}
               xs={12}
             >
-              <ProductCard product={product} />
+              <ProductCard className="dev-item" product={product} />
             </Grid>
           ))}
         </Grid>

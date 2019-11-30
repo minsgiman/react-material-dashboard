@@ -4,7 +4,7 @@ export default [
     title: 'Frontend',
     description:
       'Web front bundling, performance, deploy, test, etc ..',
-    imageUrl: '/images/products/product_1.png',
+    imageUrl: '/images/logos/frontend.svg',
     updatedAt: '27/03/2019'
   },
   {
@@ -12,7 +12,7 @@ export default [
     title: 'Javascript',
     description:
       'JS snippet, ES6, etc ..',
-    imageUrl: '/images/products/product_2.png',
+    imageUrl: '/images/logos/javascript.svg',
     createdAt: '31/03/2019'
   },
   {
@@ -20,7 +20,7 @@ export default [
     title: 'CSS',
     description:
       'CSS snippet, LESS and responsive web',
-    imageUrl: '/images/products/product_3.png',
+    imageUrl: '/images/logos/css3.svg',
     createdAt: '03/04/2019'
   },
   {
@@ -28,7 +28,7 @@ export default [
     title: 'Vue',
     description:
       'Vue.js and companion libraries',
-    imageUrl: '/images/products/product_4.png',
+    imageUrl: '/images/logos/vue-js.svg',
     createdAt: '04/04/2019'
   },
   {
@@ -36,7 +36,7 @@ export default [
     title: 'React',
     description:
       'React and companion libraries',
-    imageUrl: '/images/products/product_5.png',
+    imageUrl: '/images/logos/react.svg',
     createdAt: '04/04/2019'
   },
   {
@@ -44,7 +44,7 @@ export default [
     title: 'NodeJS',
     description:
       'NodeJS framework and socket server',
-    imageUrl: '/images/products/product_6.png',
+    imageUrl: '/images/logos/nodejs.svg',
     createdAt: '04/04/2019'
   },
   {
@@ -52,7 +52,7 @@ export default [
     title: 'Backend',
     description:
       'about Redis, Nginx, Firebase, linux, DB',
-    imageUrl: '/images/products/product_6.png',
+    imageUrl: '/images/logos/server.svg',
     createdAt: '04/04/2019'
   },
   {
@@ -60,7 +60,7 @@ export default [
     title: 'WebRTC',
     description:
       'WebRTC peer and server',
-    imageUrl: '/images/products/product_6.png',
+    imageUrl: '/images/logos/network.svg',
     createdAt: '04/04/2019'
   }
 ];

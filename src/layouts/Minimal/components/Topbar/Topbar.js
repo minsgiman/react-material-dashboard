@@ -25,10 +25,7 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+          <p className="top-title">강민석의 홈페이지</p>
         </RouterLink>
       </Toolbar>
     </AppBar>
