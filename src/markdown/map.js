@@ -30,6 +30,8 @@ export default {
   ],
   react : [
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
+    {title : 'React Hooks', fileUrl : '/react/hooks.md'},
+    {title : 'React Higher-Order Components (HOC)', fileUrl : '/react/hoc.md'},
     {title : 'Redux', fileUrl : '/react/redux.md'}
   ],
   javascript : [
