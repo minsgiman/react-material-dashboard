@@ -20,8 +20,9 @@ export default {
     {title : 'Python으로 Model별 config.json 빌드', fileUrl : '/frontend/python-build.md'}
   ],
   vue : [
-    {title : 'Vue에서 컴포넌트 강제 re-rendering 하기', fileUrl : '/vue/vue-force-re-render.md'},
+    {title : 'Vue에 Typescript 적용하기', fileUrl : '/vue/vue-typescript.md'},
     {title : 'Vue 컴포넌트 상속 (mixin과 extends)', fileUrl : '/vue/component-inherit.md'},
+    {title : 'Vue에서 컴포넌트 강제 re-rendering 하기', fileUrl : '/vue/vue-force-re-render.md'},
     {title : 'Vue와 다른 framework 비교', fileUrl : '/vue/vue-else.md'},
     {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 1', fileUrl : '/vue/migrate-from-angular-to-vue-1.md'},
     {title : 'AngularJS에서 Vue로 점진적으로 넘어가기 2', fileUrl : '/vue/migrate-from-angular-to-vue-2.md'},
