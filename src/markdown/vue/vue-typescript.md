@@ -59,7 +59,7 @@ Vue에 Typescript를 적용하는 방법 두가지<br>
 ### Decorator(@)를 사용한 Class 기반 컴포넌트
 
 * Vue는 컴포넌트를 컴포넌트 생성 옵션 객체로 정의하는 방법을 기반으로 디자인되었기 때문에, Vue.extend와 객체를 이용하는 방법이 적합하다.<br>
-  하지만 현재 위에서 본 Typescript 와의 조합시 문제를 가지고 있기 때문에, Decorator(@)를 활용한 Class 기반 컴포넌트가 현재의 대안이다.
+  하지만 현재 위에서 본 Typescript 와의 조합시 문제를 가지고 있기 때문에, Decorator(@)를 활용한 Class 기반 컴포넌트가 현재의 대안이며 Typescript의 장점을 더 살릴 수 있다.
   
         <template>...</template>
         <script lang="ts">
@@ -103,6 +103,29 @@ Vue에 Typescript를 적용하는 방법 두가지<br>
             .schedule_dialog {
             }
         </style>
+<br>
+
+### Typescript 적용 시 해줘야 할 일들
+
+* tsconfig.json, tslint.json, vue-shims.d.ts, webpack config, 
+
+* Typescript vue import error. src/vue-shims.d.ts 로 해결?<br>
+  <https://github.com/Microsoft/TypeScript-Vue-Starter#single-file-components>
+  <br>
+  <https://gongzza.github.io/javascript/vuejs/getting-started-vuejs-with-typescript-2/>
+  
+* vue-loader 버전 이슈<br>
+  <https://withhamit.tistory.com/112>
+  <br>
+  <https://stackoverflow.com/questions/51024076/typescript-cannot-detect-vue-files>
+  
+* Webstorm *.vue file tslint not working issue<br>
+  Please make sure you're using a 2019.1 build (https://www.jetbrains.com/webstorm/eap/) released after today as it contains a number of important fixes specifically for TSLint and VueJS<br>
+  <https://youtrack.jetbrains.com/issue/WEB-31044>
+  <br>
+  Linting TypeScript in Vue.js components using TSLint<br>
+  <https://www.jetbrains.com/help/webstorm/vue-js.html#ws_vue_linting>
+  
   
   
 
