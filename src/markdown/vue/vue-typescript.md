@@ -126,8 +126,153 @@ Vue에 Typescript를 적용하는 방법 두가지<br>
   Linting TypeScript in Vue.js components using TSLint<br>
   <https://www.jetbrains.com/help/webstorm/vue-js.html#ws_vue_linting>
   
+  <br>
+  tsconfig.json
   
-  
-
-
-
+        {
+          "compilerOptions": {
+            "outDir": "./built/",
+            "sourceMap": true,
+            "strict": true,
+            "module": "es2015",
+            "moduleResolution": "node",
+            "target": "es5",
+            "experimentalDecorators": true,
+            "noImplicitThis": false,
+            "resolveJsonModule": true,
+            "allowSyntheticDefaultImports": true
+          },
+          "include": [
+            "./src/**/*"
+          ]
+        }
+   <br>
+   package.json
+   
+        "dependencies": {
+            "@storybook/vue": "^5.2.6",
+            "axios": "^0.18.0",
+            "babel-cli": "^6.26.0",
+            "babel-plugin-syntax-dynamic-import": "^6.18.0",
+            "babel-preset-es2015": "^6.24.1",
+            "babel-preset-vue": "^2.0.2",
+            "babel-regenerator-runtime": "^6.5.0",
+            "d3": "^3.4.13",
+            "es6-promise": "^4.2.4",
+            "fork-ts-checker-webpack-plugin": "^3.1.1",
+            "ie-array-find-polyfill": "^1.1.0",
+            "jasmine-core": "^3.3.0",
+            "karma-chrome-launcher": "^2.2.0",
+            "karma-htmlfile-reporter": "^0.3.7",
+            "karma-jasmine": "^2.0.0",
+            "lodash": "^4.17.11",
+            "moment": "^2.24.0",
+            "pikaday": "^1.8.0",
+            "socket.io-client": "^2.2.0",
+            "toastcam-apis": "^1.1.3",
+            "ts-loader": "^6.2.1",
+            "tslint": "^5.20.1",
+            "tui-chart": "^2.13.0",
+            "typescript": "^3.1.3",
+            "uglifyjs-webpack-plugin": "^2.2.0",
+            "vue-property-decorator": "^8.3.0"
+          },
+    <br>
+    tslint.json
+    
+           {
+               "defaultSeverity": "error",
+               "extends": [
+                   "tslint:recommended"
+               ],
+               "jsRules": {},
+               "rules": {
+                   "quotemark": [true, "single", "avoid-escape"],
+                   "max-line-length": false,
+                   "object-literal-sort-keys": false,
+                   "semicolon": false,
+                   "trailing-comma": false,
+                   "ordered-imports": false,
+                   "no-console": false,
+                   "one-variable-per-declaration": false,
+                   "member-access": false,
+                   "member-ordering": false,
+                   "eofline": false,
+                   "object-literal-shorthand": false
+               },
+               "rulesDirectory": []
+           }
+    <br>
+    webpack.config.js
+    
+            var path = require('path');
+            var CopyWebpackPlugin = require('copy-webpack-plugin');
+            var VueLoaderPlugin = require('vue-loader/lib/plugin');
+            
+            function resolve (dir) {
+                return path.join(__dirname, '..', dir)
+            }
+            
+            module.exports = (env) => {
+                return {
+                    entry: {
+                        "api.min" : env.category === 'b2b' ? './src/api.b2b.js' : './src/api.b2c.js',
+                        "api.common.min" : './src/api.common.js',
+                        "api.esm.min" : './src/api.esm.js'
+                    },
+                    output: {
+                        libraryTarget: 'umd',
+                        path: path.resolve(__dirname, './dist'),
+                        filename: '[name].js'
+                    },
+                    module: {
+                        rules: [
+                            {
+                                test: /\.less$/,
+                                loader: 'style-loader!css-loader!less-loader'
+                            },
+                            {
+                                test: /\.css$/,
+                                use: [
+                                    'vue-style-loader',
+                                    'css-loader'
+                                ]
+                            },
+                            {
+                                test: /\.vue$/,
+                                loader: 'vue-loader',
+                                options: {
+                                    loaders: {
+                                        less: 'vue-style-loader!css-loader!less-loader'
+                                    }
+                                }
+                            },
+                            {
+                                test: /\.tsx?$/,
+                                loader: 'ts-loader',
+                                exclude: /node_modules/,
+                                options: {
+                                    appendTsSuffixTo: [/\.vue$/]
+                                }
+                            }
+                        ]
+                    },
+                    resolve: {
+                        extensions: ['.ts', '.js', '.vue', '.json'],
+                        alias: {
+                            '@': resolve('src')
+                        }
+                    },
+                    plugins: [
+                        new VueLoaderPlugin()
+                    ],
+                    context: __dirname
+                }
+            }
+    <br>
+    vue-shims.d.ts
+            
+            declare module '*.vue' {
+                import Vue from 'vue';
+                export default Vue;
+            }
