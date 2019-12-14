@@ -3,7 +3,7 @@ export default [
     id: 'frontend',
     title: 'Frontend',
     description:
-      'Web front bundling, performance, deploy, test, etc ..',
+      'Web front deploy, performance, test, etc ..',
     imageUrl: '/images/logos/frontend.svg',
     updatedAt: '27/03/2019'
   },
