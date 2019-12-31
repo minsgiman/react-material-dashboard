@@ -40,6 +40,14 @@ export default [
     createdAt: '04/04/2019'
   },
   {
+    id: 'typescript',
+    title: 'Typescript',
+    description:
+      'about Typescript',
+    imageUrl: '/images/logos/typescript.svg',
+    createdAt: '04/04/2019'
+  },
+  {
     id: 'nodejs',
     title: 'NodeJS',
     description:
