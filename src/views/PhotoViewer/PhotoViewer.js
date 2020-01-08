@@ -1,25 +1,31 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/scss/image-gallery.scss';
+import { getUrlParams } from './../../common/util';
+import dataMap from './../Photos/map';
 
 const PhotoViewer = () => {
-  const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
+  const urlParams = getUrlParams(window.location.href);
   const [isLoadFinish, setIsLoadFinish] = useState(false);
+  const history = useHistory();
+  let images = [], title = '';
 
-  function onImageLoad(event) {
+  dataMap.some((data) => {
+    if (data.id === urlParams.id) {
+      images = data.images;
+      title = data.title;
+      return true;
+    }
+  });
+
+  images.map((image) => {
+    if (!image.thumbnail) {
+      image.thumbnail = image.original
+    }
+  });
+
+  function onImageLoad() {
     if (!isLoadFinish) {
       setTimeout(() => {
         setIsLoadFinish(true);
@@ -30,14 +36,14 @@ const PhotoViewer = () => {
   return (
     <div className="photos_cont">
       <div className="photo_title_wrap">
-        <span className="upper_dir">Photos</span>
+        <span className="upper_dir" onClick={() => {history.push('/photos')}}>Photos</span>
         <span className="triangle-right"></span>
-        <span className="cur_tit">This is Title</span>
+        <span className="cur_tit">{title}</span>
       </div>
-      <div className={"photos_wrap " + (isLoadFinish ? '' : 'hide')}>
+      <div className={'photos_wrap ' + (isLoadFinish ? '' : 'hide')}>
         <ImageGallery items={images}
-                      showNav={false}
-                      onImageLoad={onImageLoad}/>
+          showNav={false}
+          onImageLoad={onImageLoad}/>
       </div>
       {!isLoadFinish && <img className="loading" src="/images/progress_rolling_blue.svg"></img>}
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const TitleThumb = props => {
-  const { id, imgUrl, title, description, startDate, ...rest } = props;
+  const { id, imgUrl, title, description, startDate } = props;
 
   const history = useHistory();
 
@@ -11,8 +11,7 @@ const TitleThumb = props => {
   }
 
   return (
-    <div className="title_thumb"
-         onClick={() => thumbClickCb(id)}>
+    <div className="title_thumb" onClick={() => thumbClickCb(id)}>
       <div className="img_box">
         <img src={imgUrl}></img>
       </div>
