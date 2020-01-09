@@ -126,16 +126,16 @@ div.MuiCardContent-root:last-child {
 }
 
 .photolist_wrap {
-  width: 1120px;
-  margin: 50px auto 10px;
+  width: calc(96vw - 240px);
+  margin: 40px auto 10px;
 }
 
 .title_thumb {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 346px;
-  margin: 0 40px 30px 0;
+  width: calc((96vw - (240px + 82px)) / 3);
+  margin: 0 40px 40px 0;
   border: 1px solid #dfdfdf;
   &:nth-child(3n) {
     margin-right: 0;
@@ -147,7 +147,8 @@ div.MuiCardContent-root:last-child {
     }
   }
   .img_box {
-    height: 200px;
+    position: relative;
+    height: calc((96vw - (240px + 82px)) / 5.5);
     overflow: hidden;
     img {
       width: 100%;
@@ -164,7 +165,7 @@ div.MuiCardContent-root:last-child {
     position: absolute;
     z-index: 1;
     left: 0px;
-    top: 100px;
+    bottom: 0px;
     .date_info {
       position: absolute;
       color: #1a7ad9;
@@ -184,6 +185,7 @@ div.MuiCardContent-root:last-child {
     padding: 15px;
     min-height: 50px;
     background: #fff;
+    text-align: left;
     p {
       font-size: 14px;
       color: #6f6f6f;
@@ -192,16 +194,34 @@ div.MuiCardContent-root:last-child {
   }
 }
 
-@media all and (max-width:1280px) {
+@media all and (max-width:1260px) {
   .photos_cont .photos_wrap {
     width: 90%;
   }
+  .photolist_wrap {
+    width: 80vw;
+  }
+  .title_thumb {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .title_thumb .img_box {
+    height: 14vw;
+  }
 }
 
-@media all and (max-width:540px) {
+@media all and (max-width:800px) {
   .photolist_wrap {
-    width: 350px;
-    margin: 30px auto 10px;
+    width: 100vw;
+    margin: 8vw auto 4vw;
+    text-align: center;
+  }
+  .title_thumb {
+    width: 90vw;
+    margin-right: 0;
+  }
+  .title_thumb .img_box {
+    height: 52vw;
   }
 }
 
