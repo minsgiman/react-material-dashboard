@@ -37,6 +37,50 @@
 
 ### Generic 함수 구현
 
+* 함수 호출시 타입을 지정해준다.
+
+        function first<T>(arr: T[]): T {
+            return arr[0];
+        }
+    
+        first<number>([1, 2, 3]); // 1
+
+* 두 개 이상의 타입변수를 사용
+
+        function toPair<T, U>(a: T, b: U): [ T, U ] {
+            return [ a, b ];
+        }
+    
+        toPair<string, number>('1', 1); // [ '1', 1 ]
+        toPair<number, number>(1, 1); // [ 1, 1 ]
+        
+<br>
+
+### Generic 제약조건 (Generic Constraints)
+
+* 아래 예제에서 arg의 length 프로퍼에 접근하려고 하지만 컴파일러는 모든 타입이 length 속성을 가지고 있음을 알 수 없다.
+
+        function loggingIdentity<T>(arg: T): T {
+            console.log(arg.length);  // 오류 : T는 .length 메소드를 가지고 있지 않습니다.
+            return arg;
+        }
+        
+* 위 예제에서 모든 타입으로 작업하는 대신 length 프로퍼티를 가진 모든 타입에서 동작하도록 제한을 걸어야 한다.
+
+* 타입변수 상속을 통하여 제약조건을 걸어서 이 문제를 해결 할 수 있다.
+
+        interface Lengthwise {
+            length: number;
+        }
+        
+        function loggingIdentity<T extends Lengthwise>(arg: T): T {
+            console.log(arg.length);  // 이제 .length 프로퍼티가 있으므로 더이상 오류가 없습니다.
+            return arg;
+        }
+        
+        loggingIdentity({length: 10, value: 3}); // length가 필수 프로퍼티 이므로 같이 전달해야 한다.
+<br>
+
 ### 
 
 ***
@@ -44,7 +88,4 @@
 ### 참조
  
 * Typescript Generics<br>
-      <https://github.com/typescript-kr/typescript-kr.github.io/blob/master/pages/Generics.md>
-      
-      
-          <https://hyunseob.github.io/2017/01/14/typescript-generic/>
+ <https://github.com/typescript-kr/typescript-kr.github.io/blob/master/pages/Generics.md>
