@@ -127,6 +127,7 @@ div.MuiCardContent-root:last-child {
 
 .photolist_wrap {
   width: calc(96vw - 240px);
+  max-width: 1296px;
   margin: 40px auto 10px;
 }
 
@@ -135,6 +136,7 @@ div.MuiCardContent-root:last-child {
   display: inline-block;
   cursor: pointer;
   width: calc((96vw - (240px + 82px)) / 3);
+  max-width: 404px;
   margin: 0 40px 40px 0;
   border: 1px solid #dfdfdf;
   &:nth-child(3n) {
@@ -149,6 +151,7 @@ div.MuiCardContent-root:last-child {
   .img_box {
     position: relative;
     height: calc((96vw - (240px + 82px)) / 5.5);
+    max-height: 220px;
     overflow: hidden;
     img {
       width: 100%;
