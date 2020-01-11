@@ -2,6 +2,7 @@ export default {
   frontend : [
     {title : 'Webpack Tree Shaking & Dynamic Import', fileUrl : '/frontend/webpack-treeshaking.md'},
     {title : '크롬 개발자 도구를 사용한 웹 성능분석', fileUrl : '/frontend/chrome-debugging-tool.md'},
+    {title : 'Webpack을 통한 App Config 설정하기 (DefinePlugin, EnvironmentPlugin)', fileUrl : '/frontend/webpack-define-environment-plugin.md'},
     {title : 'npm에 모듈 배포하기 1', fileUrl : '/frontend/upload-to-npm-1.md'},
     {title : 'npm에 모듈 배포하기 2', fileUrl : '/frontend/upload-to-npm-2.md'},
     {title : 'npm에 모듈 배포하기 3', fileUrl : '/frontend/upload-to-npm-3.md'},
@@ -42,7 +43,8 @@ export default {
     {title : 'Typescript Union & Intersection 타입', fileUrl : '/typescript/union-intersection-type.md'},
     {title : '타입단언(Type Assertion)과 타입가드(Type Guard)', fileUrl : '/typescript/type-assertion-type-guard.md'},
     {title : 'Vue에 Typescript 적용하기', fileUrl : '/typescript/vue-typescript.md'},
-    {title : '제네릭(Generic) 타입', fileUrl : '/typescript/generic-type.md'}
+    {title : '제네릭(Generic) 타입', fileUrl : '/typescript/generic-type.md'},
+    {title : 'tsconfig의 lib 옵션', fileUrl : '/typescript/tsconfig-lib.md'}
   ],
   javascript : [
     {title : 'Jquery의 Effect Queue', fileUrl : '/javascript/jquery-effectqueue.md'},
