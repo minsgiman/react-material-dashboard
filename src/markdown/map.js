@@ -44,6 +44,7 @@ export default {
     {title : '타입단언(Type Assertion)과 타입가드(Type Guard)', fileUrl : '/typescript/type-assertion-type-guard.md'},
     {title : 'Vue에 Typescript 적용하기', fileUrl : '/typescript/vue-typescript.md'},
     {title : '제네릭(Generic) 타입', fileUrl : '/typescript/generic-type.md'},
+    {title : 'd.ts 파일을 통한 타입선언', fileUrl : '/typescript/d.ts-file.md'},
     {title : 'tsconfig의 lib 옵션', fileUrl : '/typescript/tsconfig-lib.md'}
   ],
   javascript : [
