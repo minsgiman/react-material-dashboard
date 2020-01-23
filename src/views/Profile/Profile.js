@@ -8,7 +8,8 @@ const Profile = () => {
 
   return (
     <div className="markdown_root profile_wrap">
-        <section>
+      {/*
+      <section>
           <h4 className="section_tit">Career</h4>
           <div className="contents">
               <h4>
@@ -25,6 +26,7 @@ const Profile = () => {
               - Develop web frontend
           </div>
         </section>
+        */}
         <section>
           <h4 className="section_tit">Skills</h4>
           <div className="contents">

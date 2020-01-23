@@ -1,7 +1,7 @@
 export default [
   {
-    title : 'TOAST CAM UIkit 구현  (2018-09-01 ~ 2019-06-01)',
-    description : '여러개의 TOAST CAM Web frontend 프로젝트에서 사용하는 공통된 UI Component를 추출하고 구현하였다.</br>' +
+    title : 'UIkit 구현  (2018-09-01 ~ 2019-06-01)',
+    description : '여러개의 Web frontend 프로젝트에서 사용하는 공통된 UI Component를 추출하고 구현하였다.</br>' +
       '디자인 단계에서부터 프로젝트별로 제각각이던 UI Component를 일관되게 다시 정리하고, 구현한 UIkit을 npm package로 제공하였다.',
     skill : 'Vue, Typescript, Less, Storybook, Webpack'
   },
@@ -27,12 +27,12 @@ export default [
     title : 'webRTC 영상 스트리밍 및 Voice Chat 구현 (2017-10-02 ~ 2018-02-30)',
     description : 'WebRTC 기술을 사용하여, IP카메라와 Web Application간의 Voice Chat을 지원하고, IP카메라의 영상을 Web Application에서 스트리밍할 수 있도록 구현하였다.</br>' +
       'Web Front 및 Signaling 서버 구현, TURN/STUN 서버구축 모두 직접 진행하였다.',
-    skill : 'Web Frontend : WebRTC Peer API, AngularJS, gulp</br>' +
+    skill : '<br>Web Frontend : WebRTC Peer API, AngularJS, gulp</br>' +
       'Signaling Server : NodeJS, Redis, ZooKeeper</br>' +
       'TURN/STUN Server : coTurn, NodeJS, ZooKeeper'
   },
   {
-    title : 'TOAST CAM IOT 매장관리 Web Application 구현 및 유지보수 (2017-05-01 ~ 2019-03-08)',
+    title : 'IOT 매장관리 Web Application 구현 및 유지보수 (2017-05-01 ~ 2019-03-08)',
     description : 'IOT 컨트롤러 역할을 하는 IP카메라를 통하여, 매장내에 설치된 각종 센서들의 제어기능을 제공하며,</br>' +
       '센서 이벤트를 그래프로 보여주고, 이벤트가 발생한 시점의 영상 또한 확인할 수 있는 Web Application을 개발하였다.',
     skill : 'AngularJS, Gulp, D3, webRTC'
