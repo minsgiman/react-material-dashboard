@@ -108,6 +108,9 @@ export default {
     {title : 'Firebase Realtime DB사용2', fileUrl : '/backend/firebase-realtime-db2.md'},
     {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
+  algorithm : [
+    {title : 'Hash Table', fileUrl : '/algorithm/hashtable.md'}
+  ],
   webrtc : [
     {title : 'WebRTC Peer 구현', fileUrl : '/webrtc/rtcpeer_implement.md'},
     {title : 'WebRTC relay로만 동작하도록 변경하기', fileUrl : '/webrtc/howto_webrtc_relay_only.md'},

@@ -64,6 +64,14 @@ export default [
     createdAt: '04/04/2019'
   },
   {
+    id: 'algorithm',
+    title: 'Algorithm',
+    description:
+      'data structure and algorithm',
+    imageUrl: '/images/logos/algorithm.svg',
+    createdAt: '04/04/2019'
+  },
+  {
     id: 'webrtc',
     title: 'WebRTC',
     description:
