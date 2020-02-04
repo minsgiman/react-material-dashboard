@@ -18,6 +18,7 @@ export default {
     {title : 'TDD & BDD', fileUrl : '/frontend/tdd-bdd.md'},
     {title : 'Jasmine & Karma', fileUrl : '/frontend/jasmine-karma.md'},
     {title : 'Git-Flow 브랜치', fileUrl : '/frontend/gitflow.md'},
+    {title : 'Git repository 복사하기 (history 까지 통째로)', fileUrl : '/frontend/git-copy.md'},
     {title : 'Python으로 Model별 config.json 빌드', fileUrl : '/frontend/python-build.md'}
   ],
   vue : [
@@ -64,6 +65,7 @@ export default {
     {title : 'IP 및 URL의 유효성 검사', fileUrl : '/javascript/regular-expression.md'},
     {title : 'Cookie 사용', fileUrl : '/javascript/use-cookie.md'},
     {title : 'ES6 편리한 기능', fileUrl : '/javascript/es6-convenient.md'},
+    {title : 'Javascript bit 연산', fileUrl : '/javascript/bit-operation.md'},
     {title : 'HTML 팝업창 띄우기', fileUrl : '/javascript/html-popup.md'},
     {title : '구글맵 API 사용하기', fileUrl : '/javascript/google-map.md'},
     {title : 'CAPTCHA 사용하기', fileUrl : '/javascript/captcha.md'},
