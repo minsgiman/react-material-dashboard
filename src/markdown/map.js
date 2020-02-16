@@ -109,7 +109,15 @@ export default {
     {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
   algorithm : [
-    {title : 'Hash Table', fileUrl : '/algorithm/hashtable.md'}
+    {title : 'Hash Table', fileUrl : '/algorithm/hashtable.md'},
+    {title : '깊이 우선 탐색 (DFS, Depth-First Search)', fileUrl : '/algorithm/dfs.md'},
+    {title : '너비 우선 탐색 (BFS, Breadth-First Search)', fileUrl : '/algorithm/bfs.md'},
+    {title : 'Javascript로 이진탐색트리 구현하기', fileUrl : '/algorithm/binary-search-tree.md'},
+    {title : '이진트리가 이진탐색트리인지 판별하기', fileUrl : '/algorithm/check-binary-search-tree.md'},
+    {title : '버블정렬과 선택정렬 (bubble sort, selection sort)', fileUrl : '/algorithm/bubble-selection-sort.md'},
+    {title : '퀵 정렬 (quick sort)', fileUrl : '/algorithm/quick-sort.md'},
+    {title : '합병 정렬 (merge sort)', fileUrl : '/algorithm/merge-sort.md'},
+    {title : '이진 탐색 알고리즘', fileUrl : '/algorithm/binary-search.md'}
   ],
   webrtc : [
     {title : 'WebRTC Peer 구현', fileUrl : '/webrtc/rtcpeer_implement.md'},
