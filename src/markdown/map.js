@@ -114,6 +114,7 @@ export default {
     {title : '너비 우선 탐색 (BFS, Breadth-First Search)', fileUrl : '/algorithm/bfs.md'},
     {title : 'Javascript로 이진탐색트리 구현하기', fileUrl : '/algorithm/binary-search-tree.md'},
     {title : '이진트리가 이진탐색트리인지 판별하기', fileUrl : '/algorithm/check-binary-search-tree.md'},
+    {title : '동적 프로그래밍 (dynamic programming)', fileUrl : '/algorithm/dynamic-programming.md'},
     {title : '버블정렬과 선택정렬 (bubble sort, selection sort)', fileUrl : '/algorithm/bubble-selection-sort.md'},
     {title : '퀵 정렬 (quick sort)', fileUrl : '/algorithm/quick-sort.md'},
     {title : '합병 정렬 (merge sort)', fileUrl : '/algorithm/merge-sort.md'},
