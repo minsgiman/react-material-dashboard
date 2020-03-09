@@ -1,23 +1,22 @@
 # Git repository 복사하기 (history 까지 통째로)
 
-Create a bare mirrored clone of the repository.
-
-        git clone --mirror https://github.com/exampleuser/repository-to-mirror.git
+1. Open Terminal
 <br>
 
-Set the push location to your mirror.
+2. Create a bare clone of the repository.
 
-        cd repository-to-mirror.git
+        $ git clone --bare https://github.com/exampleuser/old-repository.git
+
+3. Mirror-push to the new repository.
         
-        git remote set-url --push origin https://github.com/exampleuser/mirrored
-<br>
+        $ cd old-repository.git
+        $ git push --mirror https://github.com/exampleuser/new-repository.git
 
-As with a bare clone, a mirrored clone includes all remote branches and tags,<br>
-but all local references will be overwritten each time you fetch,<br> 
-so it will always be the same as the original repository.<br>
-To update your mirror, push.
+4. Remove the temporary local repository you created earlier.
 
-        git push --mirror
+        $ cd ..
+        $ rm -rf old-repository.git
+        
 <br>
 
 ***
