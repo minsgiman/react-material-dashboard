@@ -46,11 +46,11 @@ const Sidebar = props => {
       href: '/develop',
       icon: <DashboardIcon />
     },
-    // {
-    //   title: 'Photos',
-    //   href: '/photos',
-    //   icon: <ImageIcon />
-    // },
+    {
+      title: 'Photos',
+      href: '/photos',
+      icon: <ImageIcon />
+    },
     {
       title: 'Profile',
       href: '/profile',

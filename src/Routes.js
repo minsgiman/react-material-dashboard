@@ -40,7 +40,6 @@ const Routes = () => {
         layout={MainLayout}
         path="/develop"
       />
-      /*
       <RouteWithLayout
         component={PhotosView}
         exact
@@ -53,7 +52,6 @@ const Routes = () => {
         layout={MainLayout}
         path="/photoviewer"
       />
-      */
       <RouteWithLayout
         component={ProfileView}
         exact
