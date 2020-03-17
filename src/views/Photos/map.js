@@ -1,4 +1,5 @@
 export default [
+  /*
   {
     id: '1',
     title: '웨딩사진',
@@ -62,7 +63,7 @@ export default [
       }
     ]
   },
-
+  */
   {
     id: '2',
     title: '신혼여행(로마)',
