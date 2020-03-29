@@ -1,6 +1,12 @@
 export default [
   {
-    title : 'UIkit 구현  (2018-09-01 ~ 2019-06-01)',
+    title : 'AngularJS + Gulp 프로젝트 점진적으로 Vue + Webpack으로 전환  (2019-11-12 ~ 2020-03-27)',
+    description : 'AngularJS를 사용한 프로젝트를 점진적으로 Vue로 전환하는 작업을 진행하였다.</br>' +
+    'Vue + Typescript + Webpack 조합으로 전환을 진행하였다.',
+    skill : 'Vue, Webpack, Typescript'
+  },
+  {
+    title : '웹프론트 UIkit 구현  (2019-04-10 ~ 2019-10-21)',
     description : '여러개의 Web frontend 프로젝트에서 사용하는 공통된 UI Component를 추출하고 구현하였다.</br>' +
       '디자인 단계에서부터 프로젝트별로 제각각이던 UI Component를 일관되게 다시 정리하고, 구현한 UIkit을 npm package로 제공하였다.',
     skill : 'Vue, Typescript, Less, Storybook, Webpack'
@@ -10,13 +16,13 @@ export default [
     description: '개발 프로세스 개선을 위해, 번역시스템을 구축하였다.</br>' +
       '구축한 효과로 App 개발 시 사용하는 Localization 파일 수정이 자동화 되었고 (App빌드시 번역어 List Get API제공),</br>' +
       '플랫폼별(Web, IOS, AOS)로 맞지 않았던 번역어 관리가 가능해졌다.',
-    skill : 'React, Webpack, NodeJS, NoSQL Couchbase DB'
+    skill : 'Vue, Typescript, Webpack, NodeJS, NoSQL Couchbase DB'
   },
   {
     title : 'DID(Digital Information Display) Web application 구현 (2018-01-03 ~ 2018-10-01)',
     description : '셋탑박스에서 Display해줄 콘텐츠 변경여부를 서버로부터 주기적으로 체크하고,</br>' +
       '콘텐츠를 다운로드 받아서 반복적으로 Display 해주는 셋탑박스 Main Web Application개발을 진행하였다.',
-    skill : 'Vue, Typescript, Less, Webpack, Karma, Jasmine'
+    skill : 'Vue, Less, Webpack, Karma, Jasmine'
   },
   {
     title : '개인 홈페이지 구현 (2017-02-03 ~ Current)',
@@ -30,6 +36,12 @@ export default [
     skill : '<br>Web Frontend : WebRTC Peer API, AngularJS, gulp</br>' +
       'Signaling Server : NodeJS, Redis, ZooKeeper</br>' +
       'TURN/STUN Server : coTurn, NodeJS, ZooKeeper'
+  },
+  {
+    title : 'Redis Cluster 구축 및 관리 (2017-09-11 ~ 2018-12-03)',
+    description : 'Redis Cache를 활용함으로써, IP Cam을 제어하는 컨트롤서버와 WAS와의 불필요한 통신을 줄이고,</br>' +
+    'Cluster로 구축된 컨트롤서버에 Redis Publish/Subscribe를 사용해서 메시지를 Broadcast하기 위하여, Redus Cluster를 구축하였다.',
+    skill : 'Redis, CentOS'
   },
   {
     title : 'IOT 매장관리 Web Application 구현 및 유지보수 (2017-05-01 ~ 2019-03-08)',
