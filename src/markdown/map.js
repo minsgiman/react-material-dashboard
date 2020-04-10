@@ -107,6 +107,7 @@ export default {
     {title : 'NoSQL Couchbase DB', fileUrl : '/backend/couchbase.md'},
     {title : 'Nginx Config 설정 1', fileUrl : '/backend/nginx_config_1.md'},
     {title : 'Nginx Config 설정 2', fileUrl : '/backend/nginx_config_2.md'},
+    {title : 'Nginx 로그 포맷 설정', fileUrl : '/backend/nginx_log.md'},
     {title : 'tcpdump 사용', fileUrl : '/backend/tcpdump.md'},
     {title : 'linux 프로세스 실행 옵션', fileUrl : '/backend/linux-process-execute.md'},
     {title : 'netcat을 사용한 udp 포트 연결 체크', fileUrl : '/backend/udp-port-check.md'},
