@@ -115,6 +115,12 @@ export default {
     {title : 'Firebase Realtime DB사용2', fileUrl : '/backend/firebase-realtime-db2.md'},
     {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
+  patterns : [
+    {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
+    {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
+    {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
+    {title : 'JS array modify by index', fileUrl: '/patterns/js-mod-by-index.md'}
+  ],
   algorithm : [
     {title : 'Hash Table', fileUrl : '/algorithm/hashtable.md'},
     {title : '깊이 우선 탐색 (DFS, Depth-First Search)', fileUrl : '/algorithm/dfs.md'},
