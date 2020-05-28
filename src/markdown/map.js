@@ -118,6 +118,8 @@ export default {
   patterns : [
     {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
     {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
+    {title : 'Adapter Pattern', fileUrl : '/patterns/adapter-pattern.md'},
+    {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
     {title : 'JS array modify by index', fileUrl: '/patterns/js-mod-by-index.md'}
   ],
