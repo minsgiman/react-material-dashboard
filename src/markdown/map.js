@@ -116,9 +116,11 @@ export default {
     {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
   patterns : [
+    {title : 'Observer Pattern', fileUrl : '/patterns/observer-pattern.md'},
+    {title : 'Memento Pattern', fileUrl : '/patterns/memento-pattern.md'},
     {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
     {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
-    {title : 'Adapter Pattern', fileUrl : '/patterns/adapter-pattern.md'},
+    {title : 'Bridge Pattern', fileUrl : '/patterns/bridge-pattern.md'},
     {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
     {title : 'JS array modify by index', fileUrl: '/patterns/js-mod-by-index.md'}
