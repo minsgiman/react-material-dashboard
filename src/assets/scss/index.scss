@@ -54,7 +54,6 @@ div.MuiCardContent-root:last-child {
 }
 
 .markdown_root {
-  padding:10px;
   .markdown_content {
     padding:18px;
     background:white;
@@ -68,25 +67,32 @@ div.MuiCardContent-root:last-child {
   color:#fff;
 }
 
+.upper_dir {
+  display: inline-block;
+  color: #777777;
+  cursor: pointer;
+}
+.up_link {
+  cursor: pointer;
+}
+.triangle-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #1b1f23;
+  border-bottom: 6px solid transparent;
+  margin: 0 8px 2px;
+}
+
 .photos_cont {
   .photo_title_wrap {
     margin: 35px 40px 25px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ccc;
     font-size:1.5em;
-    .upper_dir {
-      display: inline-block;
-      color: #777777;
-      cursor: pointer;
-    }
     .triangle-right {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-top: 6px solid transparent;
       border-left: 6px solid #4b96e6;
-      border-bottom: 6px solid transparent;
-      margin: 0 8px 2px;
     }
     .cur_tit {
       display: inline-block;

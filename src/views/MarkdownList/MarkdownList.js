@@ -9,7 +9,7 @@ const MarkdownList = () => {
         title = urlParams.title;
 
   return (
-    <TableView title={title} items={map[mapId]}></TableView>
+    <TableView title={title} id={mapId} items={map[mapId]}></TableView>
   );
 };
 

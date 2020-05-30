@@ -35,13 +35,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const DevTable = props => {
-  const { className, items, ...rest } = props;
+  const { className, items, devTitle, devId, ...rest } = props;
 
   const classes = useStyles();
   const history = useHistory();
 
   function cellClickCb(url) {
-    history.push('/markdown?url=' + encodeURIComponent(url));
+    history.push(`/markdown?url=${encodeURIComponent(url)}&devId=${devId}&devTitle=${devTitle}`);
   }
 
   return (

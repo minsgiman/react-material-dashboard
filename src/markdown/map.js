@@ -120,6 +120,7 @@ export default {
     {title : 'Memento Pattern', fileUrl : '/patterns/memento-pattern.md'},
     {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
     {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
+    {title : 'Decorator Pattern', fileUrl : '/patterns/decorator-pattern.md'},
     {title : 'Bridge Pattern', fileUrl : '/patterns/bridge-pattern.md'},
     {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
