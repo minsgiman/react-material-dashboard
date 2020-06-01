@@ -16,12 +16,12 @@ export default [
     createdAt: '31/03/2019'
   },
   {
-    id: 'css',
-    title: 'CSS',
+    id: 'patterns',
+    title: 'Patterns',
     description:
-      'CSS snippet, LESS and responsive web',
-    imageUrl: '/images/logos/css3.svg',
-    createdAt: '03/04/2019'
+      'js design pattern and snippet',
+    imageUrl: '/images/logos/algorithm.svg',
+    createdAt: '04/04/2019'
   },
   {
     id: 'vue',
@@ -64,20 +64,20 @@ export default [
     createdAt: '04/04/2019'
   },
   {
-    id: 'patterns',
-    title: 'Patterns',
-    description:
-      'js design pattern and snippet',
-    imageUrl: '/images/logos/algorithm.svg',
-    createdAt: '04/04/2019'
-  },
-  {
     id: 'algorithm',
     title: 'Algorithm',
     description:
       'data structure and algorithm',
     imageUrl: '/images/logos/algorithm.svg',
     createdAt: '04/04/2019'
+  },
+  {
+    id: 'css',
+    title: 'CSS',
+    description:
+      'CSS snippet, LESS and responsive web',
+    imageUrl: '/images/logos/css3.svg',
+    createdAt: '03/04/2019'
   },
   {
     id: 'webrtc',

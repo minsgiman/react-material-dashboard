@@ -123,6 +123,7 @@ export default {
     {title : 'Decorator Pattern', fileUrl : '/patterns/decorator-pattern.md'},
     {title : 'Bridge Pattern', fileUrl : '/patterns/bridge-pattern.md'},
     {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
+    {title : 'Throttle & Debounce', fileUrl : '/patterns/throttle-debounce.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
     {title : 'JS array modify by index', fileUrl: '/patterns/js-mod-by-index.md'}
   ],
