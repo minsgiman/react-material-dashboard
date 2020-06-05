@@ -116,8 +116,10 @@ export default {
     {title : 'Firebase 인증', fileUrl : '/backend/firebase-auth.md'}
   ],
   patterns : [
+    {title : 'Template Method Pattern', fileUrl : '/patterns/template-method-pattern.md'},
     {title : 'Observer Pattern', fileUrl : '/patterns/observer-pattern.md'},
     {title : 'Memento Pattern', fileUrl : '/patterns/memento-pattern.md'},
+    {title : 'State Pattern', fileUrl : '/patterns/state-pattern.md'},
     {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
     {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
     {title : 'Decorator Pattern', fileUrl : '/patterns/decorator-pattern.md'},
