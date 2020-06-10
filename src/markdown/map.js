@@ -117,6 +117,7 @@ export default {
   ],
   patterns : [
     {title : 'Template Method Pattern', fileUrl : '/patterns/template-method-pattern.md'},
+    {title : 'Composite Pattern', fileUrl : '/patterns/composite-pattern.md'},
     {title : 'Observer Pattern', fileUrl : '/patterns/observer-pattern.md'},
     {title : 'Memento Pattern', fileUrl : '/patterns/memento-pattern.md'},
     {title : 'State Pattern', fileUrl : '/patterns/state-pattern.md'},
