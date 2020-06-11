@@ -79,6 +79,7 @@ export default {
     {title : '반응형 웹에서 CSS 중앙정렬 기법', fileUrl : '/css/center-align.md'},
     {title : 'flexbox를 사용한 Image 중앙에 위치시키기', fileUrl : '/css/flexbox-center-img.md'},
     {title : 'Image 회전 Animation 적용', fileUrl : '/css/rotate-animation.md'},
+    {title : 'Custom styled select', fileUrl : '/css/custom-styled-select.md'},
     {title : 'CSS Browser hack', fileUrl : '/css/browser-hack.md'},
     {title : '크로스 브라우징 관련 참고', fileUrl : '/css/cross-browsing.md'},
     {title : 'LESS 사용', fileUrl : '/css/less.md'},
