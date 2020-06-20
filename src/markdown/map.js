@@ -121,6 +121,7 @@ export default {
     {title : 'Composite Pattern', fileUrl : '/patterns/composite-pattern.md'},
     {title : 'Observer Pattern', fileUrl : '/patterns/observer-pattern.md'},
     {title : 'Memento Pattern', fileUrl : '/patterns/memento-pattern.md'},
+    {title : 'Virtual List', fileUrl : '/patterns/virtual-list.md'},
     {title : 'State Pattern', fileUrl : '/patterns/state-pattern.md'},
     {title : 'Builder Pattern', fileUrl : '/patterns/builder-pattern.md'},
     {title : 'Strategy Pattern', fileUrl : '/patterns/strategy-pattern.md'},
