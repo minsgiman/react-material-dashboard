@@ -47,7 +47,7 @@ const Profile = () => {
             <ul className="project_list">
               {projects.map((project, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <h4>{project.title}</h4>
                     <p className="description" dangerouslySetInnerHTML={createMarkup(project.description)}></p>
                     <p className="tech_wrap">

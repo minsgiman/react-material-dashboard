@@ -1,14 +1,7 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 
 const TitleThumb = props => {
-  const { id, imgUrl, title, description, startDate } = props;
-
-  const history = useHistory();
-
-  function thumbClickCb(id) {
-    history.push('/photoviewer?id=' + id);
-  }
+  const { id, thumbClickCb, imgUrl, title, description, startDate } = props;
 
   return (
     <div className="title_thumb" onClick={() => thumbClickCb(id)}>

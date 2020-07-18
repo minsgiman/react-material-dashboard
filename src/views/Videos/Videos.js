@@ -7,7 +7,7 @@ const MarkdownList = () => {
   const history = useHistory();
 
   function thumbClickCb(id) {
-    history.push('/photoviewer?id=' + id);
+    history.push('/videoviewer?id=' + id);
   }
 
   return (

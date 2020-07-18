@@ -52,6 +52,11 @@ const Sidebar = props => {
       icon: <ImageIcon />
     },
     {
+      title: 'Videos',
+      href: '/videos',
+      icon: <PeopleIcon />
+    },
+    {
       title: 'Profile',
       href: '/profile',
       icon: <AccountBoxIcon />

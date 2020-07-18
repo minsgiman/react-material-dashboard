@@ -9,7 +9,9 @@ import {
   MarkdownList as MarkdownListView,
   DevelopList as DevelopListView,
   Photos as PhotosView,
+  Videos as VideosView,
   PhotoViewer as PhotoViewerView,
+  VideoViewer as VideoViewerView,
   Profile as ProfileView,
   NotFound as NotFoundView
 } from './views';
@@ -47,10 +49,22 @@ const Routes = () => {
         path="/photos"
       />
       <RouteWithLayout
+        component={VideosView}
+        exact
+        layout={MainLayout}
+        path="/videos"
+      />
+      <RouteWithLayout
         component={PhotoViewerView}
         exact
         layout={MainLayout}
         path="/photoviewer"
+      />
+      <RouteWithLayout
+        component={VideoViewerView}
+        exact
+        layout={MainLayout}
+        path="/videoviewer"
       />
       <RouteWithLayout
         component={ProfileView}
