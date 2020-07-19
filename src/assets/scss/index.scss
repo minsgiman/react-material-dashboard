@@ -103,8 +103,13 @@ div.MuiCardContent-root:last-child {
     margin: 0 auto;
     width: 70%;
     transition: all 1s ease;
+    text-align: center;
     &.hide {
       display: none;
+    }
+    iframe {
+      width: 960px;
+      height: 520px;
     }
   }
   .loading {
@@ -203,6 +208,17 @@ div.MuiCardContent-root:last-child {
   }
 }
 
+@media all and (max-width:1600px) {
+  .photos_cont {
+    .photos_wrap {
+      iframe {
+        width: 720px;
+        height: 390px;
+      }
+    }
+  }
+}
+
 @media all and (max-width:1260px) {
   .photos_cont .photos_wrap {
     width: 90%;
@@ -231,6 +247,14 @@ div.MuiCardContent-root:last-child {
   }
   .title_thumb .img_box {
     height: 52vw;
+  }
+  .photos_cont {
+    .photos_wrap {
+      iframe {
+        width: 90vw;
+        height: 48.6vw;
+      }
+    }
   }
 }
 

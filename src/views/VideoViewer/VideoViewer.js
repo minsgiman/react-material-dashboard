@@ -1,23 +1,30 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import "video-react/dist/video-react.css";
-import { Player, BigPlayButton, LoadingSpinner } from 'video-react';
 import { getUrlParams } from './../../common/util';
 import dataMap from './../Videos/map';
 
 const VideoViewer = () => {
   const urlParams = getUrlParams(window.location.href);
   const history = useHistory();
-  let videoUrl = '', title = '', thumbnailUrl = '';
+  const [isLoadFinish, setIsLoadFinish] = useState(false);
+  let videoUrl = '', title = '', titleImgUrl = '';
 
   dataMap.some((data) => {
     if (data.id === urlParams.id) {
       videoUrl = data.videoUrl;
-      thumbnailUrl = data.thumbnailUrl;
+      titleImgUrl = data.titleImgUrl;
       title = data.title;
       return true;
     }
   });
+
+  function iframeOnLoad() {
+    if (!isLoadFinish) {
+      setTimeout(() => {
+        setIsLoadFinish(true);
+      }, 100);
+    }
+  }
 
   return (
     <div className="photos_cont">
@@ -26,15 +33,10 @@ const VideoViewer = () => {
         <span className="triangle-right"></span>
         <span className="cur_tit">{title}</span>
       </div>
-      <div className={'photos_wrap'}>
-        <Player
-          playsInline
-          poster={thumbnailUrl}
-          src={videoUrl}>
-          <BigPlayButton position="center" />
-          <LoadingSpinner />
-        </Player>
+      <div className={'photos_wrap ' + (isLoadFinish ? '' : 'hide')}>
+        <iframe src={videoUrl} onLoad={iframeOnLoad}></iframe>
       </div>
+      {!isLoadFinish && <img className="loading" src="/images/progress_rolling_blue.svg"></img>}
     </div>
   );
 };

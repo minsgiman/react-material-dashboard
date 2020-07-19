@@ -1,10 +1,10 @@
 export default [
   {
     id: '1',
-    title: '신혼여행(피렌체)',
-    description: '신혼여행 피렌체 ~',
+    title: '신혼여행',
+    description: '신혼여행 ~',
     startDate: '2017-11',
-    thumbnailUrl: '/images/photos/firenze.jpg',
-    videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+    titleImgUrl: '/images/photos/amalfi.jpg',
+    videoUrl: 'https://drive.google.com/file/d/1Mnx17E86-JYdOlHRmawLww82nBrYel9Z/preview'
   }
 ];
