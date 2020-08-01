@@ -24,6 +24,7 @@ export default {
   vue : [
     {title : 'Vue.js의 Dynamic component 사용하기', fileUrl : '/vue/component-dynamic-import.md'},
     {title : 'Vue + Typescript 환경에서 Storybook 사용하기', fileUrl : '/vue/vue-typescript-storybook.md'},
+    {title : 'Vue Useful Directives and Components', fileUrl : '/vue/vue-useful-directives-components.md'},
     {title : 'Vue 컴포넌트 상속 (mixin과 extends)', fileUrl : '/vue/component-inherit.md'},
     //{title : 'Vue 서버사이드 렌더링', fileUrl : '/vue/vue-ssr.md'},
     {title : 'Vue에서 컴포넌트 강제 re-rendering 하기', fileUrl : '/vue/vue-force-re-render.md'},
