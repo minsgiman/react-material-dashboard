@@ -24,6 +24,7 @@ export default {
   vue : [
     {title : 'Vue.js의 Dynamic component 사용하기', fileUrl : '/vue/component-dynamic-import.md'},
     {title : 'Vue + Typescript 환경에서 Storybook 사용하기', fileUrl : '/vue/vue-typescript-storybook.md'},
+    {title : 'Vue Useful Directives and Components', fileUrl : '/vue/vue-useful-directives-components.md'},
     {title : 'Vue 컴포넌트 상속 (mixin과 extends)', fileUrl : '/vue/component-inherit.md'},
     //{title : 'Vue 서버사이드 렌더링', fileUrl : '/vue/vue-ssr.md'},
     {title : 'Vue에서 컴포넌트 강제 re-rendering 하기', fileUrl : '/vue/vue-force-re-render.md'},
@@ -75,6 +76,7 @@ export default {
     {title : 'CAPTCHA 사용하기', fileUrl : '/javascript/captcha.md'},
   ],
   css : [
+    {title : 'flexbox를 이용한 grid 구현', fileUrl : '/css/flexbox-grid.md'},
     {title : 'Responsive Web 구현', fileUrl : '/css/responsive-web.md'},
     {title : '반응형 웹에서 CSS 중앙정렬 기법', fileUrl : '/css/center-align.md'},
     {title : 'flexbox를 사용한 Image 중앙에 위치시키기', fileUrl : '/css/flexbox-center-img.md'},
