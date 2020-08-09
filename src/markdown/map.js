@@ -1,5 +1,6 @@
 export default {
   frontend : [
+    {title : 'Atomic Design', fileUrl : '/frontend/atomic-design.md'},
     {title : 'Webpack Tree Shaking & Dynamic Import', fileUrl : '/frontend/webpack-treeshaking.md'},
     {title : '크롬 개발자 도구를 사용한 웹 성능분석', fileUrl : '/frontend/chrome-debugging-tool.md'},
     {title : 'Webpack을 통한 App Config 설정하기 (DefinePlugin, EnvironmentPlugin)', fileUrl : '/frontend/webpack-define-environment-plugin.md'},
@@ -22,6 +23,7 @@ export default {
     {title : 'Python으로 Model별 config.json 빌드', fileUrl : '/frontend/python-build.md'}
   ],
   vue : [
+    {title : 'Vue Atomic Design', fileUrl : '/vue/atomic-design-vue.md'},
     {title : 'Vue.js의 Dynamic component 사용하기', fileUrl : '/vue/component-dynamic-import.md'},
     {title : 'Vue + Typescript 환경에서 Storybook 사용하기', fileUrl : '/vue/vue-typescript-storybook.md'},
     {title : 'Vue Useful Directives and Components', fileUrl : '/vue/vue-useful-directives-components.md'},
