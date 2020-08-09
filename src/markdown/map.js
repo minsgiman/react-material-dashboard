@@ -77,6 +77,7 @@ export default {
   ],
   css : [
     {title : 'flexbox를 이용한 grid 구현', fileUrl : '/css/flexbox-grid.md'},
+    {title : 'CSS Tricks', fileUrl : '/css/css-tricks.md'},
     {title : 'Responsive Web 구현', fileUrl : '/css/responsive-web.md'},
     {title : '반응형 웹에서 CSS 중앙정렬 기법', fileUrl : '/css/center-align.md'},
     {title : 'flexbox를 사용한 Image 중앙에 위치시키기', fileUrl : '/css/flexbox-center-img.md'},
@@ -144,7 +145,8 @@ export default {
     {title : '버블정렬과 선택정렬 (bubble sort, selection sort)', fileUrl : '/algorithm/bubble-selection-sort.md'},
     {title : '퀵 정렬 (quick sort)', fileUrl : '/algorithm/quick-sort.md'},
     {title : '합병 정렬 (merge sort)', fileUrl : '/algorithm/merge-sort.md'},
-    {title : '이진 탐색 알고리즘', fileUrl : '/algorithm/binary-search.md'}
+    {title : '이진 탐색 알고리즘', fileUrl : '/algorithm/binary-search.md'},
+    {title : 'Linked List in Javascript', fileUrl : '/algorithm/linked-list.md'}
   ],
   webrtc : [
     {title : 'WebRTC Peer 구현', fileUrl : '/webrtc/rtcpeer_implement.md'},
