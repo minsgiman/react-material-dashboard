@@ -94,7 +94,43 @@ HTML, CSS
 ```
 <br>
 
-### 4. Colorize and Zoom Into Image on Hover
+### 4. Parallax Images
+
+* Page 스크롤시, Background 는 고정시킨 상태에서 컨텐츠만 이동시킨다.
+
+* background-attachment: fixed 속성을 이용하여 구현한다.
+
+* <https://www.w3schools.com/howto/howto_css_parallax.asp>
+
+<br>
+
+HTML, CSS
+```html
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+<div class="parallax"></div>
+<div style="height:1000px;background-color:red;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+</div>
+```
+```css
+.parallax {
+    /* The image used */
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+```
+
+<br>
+
+### 5. Colorize and Zoom Into Image on Hover
 
 * Image hover시 Zoom 효과, 색효과 등을 준다. 
 
