@@ -53,6 +53,10 @@ div.MuiCardContent-root:last-child {
   color: #4a96e6;
 }
 
+.markdown-body p img {
+  max-width: 50%;
+}
+
 .markdown_root {
   .markdown_content {
     padding:18px;
