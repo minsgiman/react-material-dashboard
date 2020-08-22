@@ -55,9 +55,10 @@ export default {
     {title : 'tsconfig의 lib 옵션', fileUrl : '/typescript/tsconfig-lib.md'}
   ],
   javascript : [
-    {title : 'Jquery의 Effect Queue', fileUrl : '/javascript/jquery-effectqueue.md'},
-    {title : 'Mutable, Immutable Array 함수와 Spread 구문', fileUrl : '/javascript/mutable_array_spread.md'},
     {title : 'window.requestAnimationFrame()의 이해', fileUrl : '/javascript/requestanimationframe.md'},
+    {title : 'Mutable, Immutable Array 함수와 Spread 구문', fileUrl : '/javascript/mutable_array_spread.md'},
+    {title : 'Map & Set', fileUrl : '/javascript/map-set.md'},
+    {title : 'Jquery의 Effect Queue', fileUrl : '/javascript/jquery-effectqueue.md'},
     {title : 'Browser 이름 및 버전 체크 snippet', fileUrl : '/javascript/browser-check.md'},
     {title : 'MVW framework없이 SPA구현 1 (Page이동)', fileUrl : '/javascript/spa1.md'},
     {title : 'MVW framework없이 SPA구현 2 (Page구현)', fileUrl : '/javascript/spa2.md'},
