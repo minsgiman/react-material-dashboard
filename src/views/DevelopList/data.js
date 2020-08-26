@@ -1,27 +1,11 @@
 export default [
   {
-    id: 'frontend',
-    title: 'Frontend',
-    description:
-      'Web front deploy, performance, test, etc ..',
-    imageUrl: '/images/logos/frontend.svg',
-    updatedAt: '27/03/2019'
-  },
-  {
     id: 'javascript',
     title: 'Javascript',
     description:
       'JS snippet, ES6, etc ..',
     imageUrl: '/images/logos/javascript.svg',
     createdAt: '31/03/2019'
-  },
-  {
-    id: 'patterns',
-    title: 'Patterns',
-    description:
-      'js design pattern and snippet',
-    imageUrl: '/images/logos/algorithm.svg',
-    createdAt: '04/04/2019'
   },
   {
     id: 'vue',
@@ -32,12 +16,36 @@ export default [
     createdAt: '04/04/2019'
   },
   {
-    id: 'react',
-    title: 'React',
+    id: 'patterns',
+    title: 'Patterns',
     description:
-      'React and companion libraries',
-    imageUrl: '/images/logos/react.svg',
+      'js design pattern and snippet',
+    imageUrl: '/images/logos/algorithm.svg',
     createdAt: '04/04/2019'
+  },
+  {
+    id: 'frontend',
+    title: 'Frontend',
+    description:
+      'Web front deploy, performance, test, etc ..',
+    imageUrl: '/images/logos/frontend.svg',
+    updatedAt: '27/03/2019'
+  },
+  {
+    id: 'css',
+    title: 'CSS',
+    description:
+      'CSS snippet, LESS and responsive web',
+    imageUrl: '/images/logos/css3.svg',
+    createdAt: '03/04/2019'
+  },
+  {
+    id: 'security',
+    title: 'Security',
+    description:
+      'Web security',
+    imageUrl: '/images/logos/shield.svg',
+    updatedAt: '27/03/2019'
   },
   {
     id: 'typescript',
@@ -72,12 +80,12 @@ export default [
     createdAt: '04/04/2019'
   },
   {
-    id: 'css',
-    title: 'CSS',
+    id: 'react',
+    title: 'React',
     description:
-      'CSS snippet, LESS and responsive web',
-    imageUrl: '/images/logos/css3.svg',
-    createdAt: '03/04/2019'
+      'React and companion libraries',
+    imageUrl: '/images/logos/react.svg',
+    createdAt: '04/04/2019'
   },
   {
     id: 'webrtc',

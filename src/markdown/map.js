@@ -22,6 +22,10 @@ export default {
     {title : 'Git repository 복사하기 (history 까지 통째로)', fileUrl : '/frontend/git-copy.md'},
     {title : 'Python으로 Model별 config.json 빌드', fileUrl : '/frontend/python-build.md'}
   ],
+  security : [
+    {title : 'OWASP Top 10 (2017)', fileUrl : '/security/owasp-top-10.md'},
+    {title : 'XSS와 sanitize-html', fileUrl : '/security/xss-sanitize-html.md'}
+  ],
   vue : [
     {title : 'Vue Atomic Design', fileUrl : '/vue/atomic-design-vue.md'},
     {title : 'Vue.js의 Dynamic component 사용하기', fileUrl : '/vue/component-dynamic-import.md'},
