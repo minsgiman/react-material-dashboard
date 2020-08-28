@@ -23,8 +23,9 @@ export default {
     {title : 'Python으로 Model별 config.json 빌드', fileUrl : '/frontend/python-build.md'}
   ],
   security : [
-    {title : 'OWASP Top 10 (2017)', fileUrl : '/security/owasp-top-10.md'},
-    {title : 'XSS와 sanitize-html', fileUrl : '/security/xss-sanitize-html.md'}
+    {title : 'HTTP Security Header', fileUrl : '/security/security-header.md'},
+    {title : 'XSS와 sanitize-html', fileUrl : '/security/xss-sanitize-html.md'},
+    {title : 'OWASP Top 10 (2017)', fileUrl : '/security/owasp-top-10.md'}
   ],
   vue : [
     {title : 'Vue Atomic Design', fileUrl : '/vue/atomic-design-vue.md'},
