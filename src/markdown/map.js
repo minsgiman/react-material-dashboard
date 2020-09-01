@@ -25,6 +25,7 @@ export default {
   security : [
     {title : 'HTTP Security Header', fileUrl : '/security/security-header.md'},
     {title : 'XSS와 sanitize-html', fileUrl : '/security/xss-sanitize-html.md'},
+    {title : 'Express 보안', fileUrl : '/security/express-security.md'},
     {title : 'OWASP Top 10 (2017)', fileUrl : '/security/owasp-top-10.md'}
   ],
   vue : [
