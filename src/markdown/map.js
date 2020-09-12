@@ -112,6 +112,7 @@ export default {
     {title : 'Socket 서버 구현 4 (Redis Client)', fileUrl : '/nodejs/socket-server4.md'},
     {title : 'Socket 서버 구현 5 (Zookeeper Client, Kafka Producer)', fileUrl : '/nodejs/socket-server5.md'},
     {title : 'Socket 서버 구현 6 (http Request)', fileUrl : '/nodejs/socket-server6.md'},
+    {title : 'express에서 mongoose 사용하기', fileUrl : '/nodejs/mongoose.md'},
     {title : 'http proxy 서버 구현하기', fileUrl : '/nodejs/http-proxy.md'},
     {title : 'NodeJS 파일 읽기 및 쓰기에 필요한 모든 내용', fileUrl : '/nodejs/howto-file-read-write.md'}
   ],
