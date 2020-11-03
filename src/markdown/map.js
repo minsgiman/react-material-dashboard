@@ -145,6 +145,7 @@ export default {
     {title : 'Decorator Pattern', fileUrl : '/patterns/decorator-pattern.md'},
     {title : 'Bridge Pattern', fileUrl : '/patterns/bridge-pattern.md'},
     {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
+    {title : 'Ice Factory Pattern', fileUrl : '/patterns/ice-factory-pattern.md'},
     {title : 'MVC Architecture', fileUrl : '/patterns/mvc.md'},
     {title : 'Throttle & Debounce', fileUrl : '/patterns/throttle-debounce.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
