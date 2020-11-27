@@ -89,6 +89,7 @@ export default {
     {title : 'flexbox를 이용한 grid 구현', fileUrl : '/css/flexbox-grid.md'},
     {title : 'CSS Tricks', fileUrl : '/css/css-tricks.md'},
     {title : 'CSS Reset', fileUrl : '/css/css-reset.md'},
+    {title : '테마 변경 with LESS', fileUrl : '/css/less-theme.md'},
     {title : 'Responsive Web 구현', fileUrl : '/css/responsive-web.md'},
     {title : '반응형 웹에서 CSS 중앙정렬 기법', fileUrl : '/css/center-align.md'},
     {title : 'flexbox를 사용한 Image 중앙에 위치시키기', fileUrl : '/css/flexbox-center-img.md'},
