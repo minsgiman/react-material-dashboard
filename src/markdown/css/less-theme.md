@@ -34,3 +34,11 @@ body.themeRed {
   }
 }
 ```
+
+<br>
+
+***
+
+### 참조
+
+* [A Complete Guide to Dark Mode on the Web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web)
