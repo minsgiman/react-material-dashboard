@@ -7,6 +7,7 @@ export default {
     {title : 'npm에 모듈 배포하기 1', fileUrl : '/frontend/upload-to-npm-1.md'},
     {title : 'npm에 모듈 배포하기 2', fileUrl : '/frontend/upload-to-npm-2.md'},
     {title : 'npm에 모듈 배포하기 3', fileUrl : '/frontend/upload-to-npm-3.md'},
+    {title : '효율적인 테스트 케이스', fileUrl : '/frontend/testcase.md'},
     {title : '크로스 도메인 해결방법', fileUrl : '/frontend/cross-domain.md'},
     {title : 'Vue-React-Angular 비교', fileUrl : '/frontend/vue-react-angular.md'},
     {title : 'viewport meta tag를 이용한 모바일 브라우저 레이아웃 설정', fileUrl : '/frontend/viewport-meta.md'},
