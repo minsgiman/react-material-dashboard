@@ -75,6 +75,7 @@ export default {
     {title : 'MVW framework없이 SPA구현 5 (다국어 지원)', fileUrl : '/javascript/spa5.md'},
     {title : 'MVW framework없이 SPA구현 6 (Service구현)', fileUrl : '/javascript/spa6.md'},
     {title : 'Javascript의 Event Loop ', fileUrl : '/javascript/js-eventloop.md'},
+    {title : 'Javascript Hacks', fileUrl : '/javascript/js-hack.md'},
     {title : 'Javascript의 캡슐화', fileUrl : '/javascript/capsulation.md'},
     {title : 'Garbage Collection', fileUrl : '/javascript/garbage-collection.md'},
     {title : 'IP 및 URL의 유효성 검사', fileUrl : '/javascript/regular-expression.md'},
