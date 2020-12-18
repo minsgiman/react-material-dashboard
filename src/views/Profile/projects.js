@@ -1,25 +1,32 @@
 export default [
   {
-    title : 'AngularJS + Gulp 프로젝트 점진적으로 Vue + Webpack으로 전환  (2019-11-12 ~ 2020-03-27)',
-    description : 'AngularJS를 사용한 프로젝트를 점진적으로 Vue로 전환하는 작업을 진행하였다.</br>' +
+    title : 'AI 얼굴인식 Web Application 구현  (2020-04-10 ~ 2020-06-19)',
+    description : 'IP 카메라에서 사람의 얼굴을 감지하면 얼굴 이미지를 서버로 전송하여 AWS rekognition API를 통해</br>' +
+        '이미 등록되어 있는 인물의 얼굴과 일치하는지 판단하여, 일치할 경우 도어락을 열어주거나 의미 있는 이벤트 리스트로 만들어서 보여주는 프로젝트',
+    skill : 'Vue, Webpack, Typescript, Less, Jest, NodeJS'
+  },
+  {
+    title : 'AngularJS 1 + Gulp 프로젝트 점진적으로 Vue + Webpack으로 전환  (2019-11-12 ~ 2020-03-27)',
+    description : 'AngularJS 1을 사용한 프로젝트를 점진적으로 Vue로 전환하는 작업을 진행하였다.</br>' +
     'Vue + Typescript + Webpack 조합으로 전환을 진행하였다.',
-    skill : 'Vue, Webpack, Typescript'
+    skill : 'Vue, Webpack, Typescript, Jest'
   },
   {
     title : '웹프론트 UIkit 구현  (2019-04-10 ~ 2019-10-21)',
     description : '여러개의 Web frontend 프로젝트에서 사용하는 공통된 UI Component를 추출하고 구현하였다.</br>' +
       '디자인 단계에서부터 프로젝트별로 제각각이던 UI Component를 일관되게 다시 정리하고, 구현한 UIkit을 npm package로 제공하였다.',
-    skill : 'Vue, Typescript, Less, Storybook, Webpack'
+    skill : 'Vue, Webpack, Typescript, Less, Storybook, Jest'
   },
   {
     title : 'Localization System(번역 시스템) 구축 (2018-08-03 ~ 2019-02-10)',
     description: '개발 프로세스 개선을 위해, 번역시스템을 구축하였다.</br>' +
       '구축한 효과로 App 개발 시 사용하는 Localization 파일 수정이 자동화 되었고 (App빌드시 번역어 List Get API제공),</br>' +
-      '플랫폼별(Web, IOS, AOS)로 맞지 않았던 번역어 관리가 가능해졌다.',
-    skill : 'Vue, Typescript, Webpack, NodeJS, NoSQL Couchbase DB'
+      '플랫폼별(Web, IOS, AOS)로 맞지 않았던 번역어 관리가 가능해졌다. (번역관리 Admin 페이지 제공)</br>' +
+      '또한 JWT인증을 통하여 권한관리 및 사용기록 로깅을 지원하였다.',
+    skill : 'Vue, Typescript, Webpack, NodeJS, MongoDB(Mongoose), JWT'
   },
   {
-    title : 'DID(Digital Information Display) Web application 구현 (2018-01-03 ~ 2018-10-01)',
+    title : 'DID(Digital Information Display) Web application 구현 (2018-01-03 ~ 2018-04-02)',
     description : '셋탑박스에서 Display해줄 콘텐츠 변경여부를 서버로부터 주기적으로 체크하고,</br>' +
       '콘텐츠를 다운로드 받아서 반복적으로 Display 해주는 셋탑박스 Main Web Application개발을 진행하였다.',
     skill : 'Vue, Less, Webpack, Karma, Jasmine'

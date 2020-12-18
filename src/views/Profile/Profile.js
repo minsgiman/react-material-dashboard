@@ -32,13 +32,13 @@ const Profile = () => {
           <div className="contents">
               <h4>Frontend</h4>
               <span className="sub_tit">- Language :</span>
-              Javascript, Typescript, HTML, CSS, Less, C
+              Javascript, Typescript, HTML, CSS, Less, Sass
               <br/>
               <span className="sub_tit">- Framework & Library :</span>
-              Vue, React, AngularJS, D3, Storybook, Jasmine, Karma
+              Vue, React, AngularJS, Jquery, D3, Storybook, Jest, Enzyme, Jasmine, Karma
               <br/><br/>
               <h4>Backend</h4>
-              - NodeJS, WebRTC, Redis, Nginx, Couchbase DB, Clustering
+              - NodeJS, Redis, Nginx, WebRTC, MongoDB, Clustering
           </div>
         </section>
         <section>
