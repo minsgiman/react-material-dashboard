@@ -61,8 +61,26 @@ if (process) {
     });
 }
 
+app.disable('x-powered-by');
 app.use(function(req, res, next) {
-    res.header('Cache-Control', 'public, max-age=86400');
+    let protocol = req.headers['x-forwarded-proto'] || req.protocol;
+    if (protocol == 'https') {
+        next();
+    } else {
+        let from = `${protocol}://${req.hostname}${req.url}`;
+        let to = `https://${req.hostname}${req.url}`;
+        res.redirect(to);
+    }
+});
+
+app.use(function(req, res, next) {
+    if (req.url.indexOf('/json') === -1 && req.url.indexOf('/install') === -1) {
+      if (req.url === '/') {
+          res.header('Cache-Control', 'no-store');
+      } else {
+          res.header('Cache-Control', 'public, max-age=86400');
+      }
+    }
     next();
 });
 app.use(express.static(path.join(__dirname, 'public')));
@@ -78,13 +96,15 @@ app.use(cookieParser());
 
 const proxy = httpProxy.createProxyServer({changeOrigin: true});
 
-// proxy.on('proxyRes', function (proxyRes, req, res) {
-//     console.log('RAW Response from the target', JSON.stringify(proxyRes.headers, true, 2));
-// });
+proxy.on('proxyRes', function (proxyRes, req, res) {
+  const cookies = proxyRes.headers['set-cookie'];
+  if (cookies && cookies.length) {
+    proxyRes.headers['set-cookie'] = cookies.map(cookie => {
+      return cookie.replace(/Domain=.*;\s/,'Domain=xxx.com;');
+    });
+  }
+});
 
-/**
- * restream parsed body before proxying
- */
 proxy.on( 'proxyReq', ( proxyReq, req, res, options ) => {
   if ( !req.body || !Object.keys( req.body ).length ) {
     return;
