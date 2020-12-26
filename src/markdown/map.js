@@ -49,6 +49,7 @@ export default {
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
     {title : 'MobX 사용 및 장단점', fileUrl : '/react/mobx-basic.md'},
     {title : 'React에서 MobX 사용하기', fileUrl : '/react/react-mobx.md'},
+    {title : 'React.memo 사용하기', fileUrl : '/react/react-memo.md'},
     {title : 'React Hooks', fileUrl : '/react/hooks.md'},
     {title : 'React Higher-Order Components (HOC)', fileUrl : '/react/hoc.md'},
     {title : 'Redux', fileUrl : '/react/redux.md'}
