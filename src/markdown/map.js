@@ -46,6 +46,7 @@ export default {
     {title : 'IE에서 axios, vuex 사용시 에러 수정하기', fileUrl : '/vue/howto_use_vuex_inIE.md'},
   ],
   react : [
+    {title : 'useSWR 사용', fileUrl : '/react/useSWR.md'},
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
     {title : 'MobX와 React hooks 함께 사용하기', fileUrl : '/react/mobx-hooks.md'},
     {title : 'MobX 사용 및 장단점', fileUrl : '/react/mobx-basic.md'},
