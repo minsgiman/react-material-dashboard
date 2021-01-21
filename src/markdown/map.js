@@ -47,6 +47,7 @@ export default {
   ],
   react : [
     {title : 'useSWR 사용', fileUrl : '/react/useSWR.md'},
+    {title : 'useRef를 활용한 React App 성능 개선', fileUrl : '/react/useref-for-perform.md'},
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
     {title : 'MobX와 React hooks 함께 사용하기', fileUrl : '/react/mobx-hooks.md'},
     {title : 'MobX 사용 및 장단점', fileUrl : '/react/mobx-basic.md'},
