@@ -27,8 +27,30 @@
 * 새로 만든 release 브랜치는 잘 말아서 진짜로 배포할 때까지 유지한다. 그동안 발견한 버그는 develop 브랜치가 아니라 이 브랜치에서 해결하고 새 기능은 이 브랜치에 추가하지 않는다.
  
 * 배포할때가 되면 master 브랜치에 있는 것을 배포하는 것으로 정의했으므로 먼저 release 브랜치를 master로 merge한다. 그리고 나중에 이 버전을 찾기 쉽도록 태그를 만들어 지금 master가 가리키는 커밋을 가리키게 한다. 그리고 release 브랜치를 develop 브랜치에 merge하고 다음에 배포할 때 release 브랜치에서 해결한 버그가 적용되도록 한다.
+<br><br>
 
-<br>
+## Command
+* **git remote -v** : 현재 원격 저장소 확인
+
+* **git remote add upstream https://github.com/ORIGIN_OWNER/ORIGIN_REPO.git** : upstream이란 이름으로 Fork대상인 원래 저장소를 원격저장소로 추가
+
+* **git remote update** : 원격 브랜치에 접근하기 위해 remote 갱신
+
+* **git checkout -b bfm-100 --track upstream/feature-user** : upstream/feature-user 브랜치에서 작업 브랜치(bfm-100)를 생성
+
+* **git commit -m "BFM-100 로그인 작업"** : 작업 브랜치에 변경사항 커밋
+
+* **git rebase -i HEAD~2** : 마지막 커밋 2개 하나로 합치기 (squash)
+
+* **git pull --rebase upstream feature-user** : upstream/feature-user를 작업 브랜치에 rebase한다.
+
+* **git push origin bfm-100** : 작업 브랜치를 origin에 push
+
+* **git merge --no-ff upstream/develop** : 현재 브랜치에 upstream/develop 브랜치를 merge (--no-ff옵션을 주면 항상 merge커밋을 만들어 merge한다. tree에서 merge기록을 확인하기 쉽다.)
+
+* **git push upstream feature-user** : 현재 브랜치의 수정사항을 upstream의 feature-user브랜치에 push한다.
+
+* **git tag 1.0.0** : 현재 브랜치에 태그 1.0.0 추가
 
 ***
 
@@ -38,4 +60,7 @@
 
 * A successful Git branching model(한글번역)<br>
 <http://dogfeet.github.io/articles/2011/a-successful-git-branching-model.html>
+
+* 우린 Git-flow를 사용하고 있어요<br>
+<https://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html>
 
