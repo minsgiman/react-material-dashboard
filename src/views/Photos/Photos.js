@@ -1,7 +1,7 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import TitleThumb from '../../components/TitleThumb';
 import dataMap from './map';
-import { useHistory } from 'react-router-dom';
 
 const MarkdownList = () => {
   const history = useHistory();
@@ -13,14 +13,16 @@ const MarkdownList = () => {
   return (
     <div className="photolist_cont">
       <div className="photolist_wrap">
-        {dataMap.map((item) => (
-          <TitleThumb id={item.id}
+        {dataMap.map(item => (
+          <TitleThumb
+            id={item.id}
             key={item.id}
             thumbClickCb={thumbClickCb}
             imgUrl={item.titleImgUrl}
             title={item.title}
             description={item.description}
-            startDate={item.startDate}/>
+            startDate={item.startDate}
+          />
         ))}
       </div>
     </div>

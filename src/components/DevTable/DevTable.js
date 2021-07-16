@@ -4,37 +4,29 @@ import PropTypes from 'prop-types';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
 import { useHistory } from 'react-router-dom';
-import {
-  Card,
-  CardContent,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow
-} from '@material-ui/core';
+import { Card, CardContent, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {},
   content: {
-    padding: 0
+    padding: 0,
   },
   inner: {
-    minWidth: 1050
+    minWidth: 1050,
   },
   nameContainer: {
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   avatar: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   actions: {
-    justifyContent: 'flex-end'
-  }
+    justifyContent: 'flex-end',
+  },
 }));
 
-const DevTable = props => {
+const DevTable = (props) => {
   const { className, items, devTitle, devId, ...rest } = props;
 
   const classes = useStyles();
@@ -45,17 +37,16 @@ const DevTable = props => {
   }
 
   return (
-    <Card
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
+    <Card {...rest} className={clsx(classes.root, className)}>
       <CardContent className={classes.content}>
         <PerfectScrollbar>
           <div className={classes.inner}>
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell sizesmall="true" size="small">Number</TableCell>
+                  <TableCell sizesmall="true" size="small">
+                    Number
+                  </TableCell>
                   <TableCell>Title</TableCell>
                 </TableRow>
               </TableHead>
@@ -86,7 +77,9 @@ const DevTable = props => {
 
 DevTable.propTypes = {
   className: PropTypes.string,
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
+  devTitle: PropTypes.string,
+  devId: PropTypes.string,
 };
 
 export default DevTable;
