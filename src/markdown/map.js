@@ -156,6 +156,8 @@ export default {
     {title : 'Bridge Pattern', fileUrl : '/patterns/bridge-pattern.md'},
     {title : 'Factory Method Pattern', fileUrl : '/patterns/factory-method.md'},
     {title : 'Ice Factory Pattern', fileUrl : '/patterns/ice-factory-pattern.md'},
+    {title : 'functional extention', fileUrl : '/patterns/functional-extention.md'},
+    {title : 'logger', fileUrl : '/patterns/logger.md'},
     {title : 'MVC Architecture', fileUrl : '/patterns/mvc.md'},
     {title : 'Throttle & Debounce', fileUrl : '/patterns/throttle-debounce.md'},
     {title : 'JS Object Copy', fileUrl : '/patterns/js-object-copy.md'},
