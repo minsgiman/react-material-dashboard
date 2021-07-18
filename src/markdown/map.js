@@ -1,6 +1,7 @@
 export default {
   frontend : [
     {title : 'Atomic Design', fileUrl : '/frontend/atomic-design.md'},
+    {title : 'Web App 성능 개선 참고', fileUrl : '/frontend/performance-refer.md'},
     {title : 'Webpack Tree Shaking & Dynamic Import', fileUrl : '/frontend/webpack-treeshaking.md'},
     {title : '크롬 개발자 도구를 사용한 웹 성능분석', fileUrl : '/frontend/chrome-debugging-tool.md'},
     {title : 'Webpack을 통한 App Config 설정하기 (DefinePlugin, EnvironmentPlugin)', fileUrl : '/frontend/webpack-define-environment-plugin.md'},
@@ -46,6 +47,7 @@ export default {
     {title : 'IE에서 axios, vuex 사용시 에러 수정하기', fileUrl : '/vue/howto_use_vuex_inIE.md'},
   ],
   react : [
+    {title : 'React.lazy load 실패 시 retry하기', fileUrl : '/react/retryable-lazy.md'},
     {title : 'useSWR 사용', fileUrl : '/react/useSWR.md'},
     {title : 'useRef를 활용한 React App 성능 개선', fileUrl : '/react/useref-for-perform.md'},
     {title : 'Jest, Enzyme 을 사용한 React 컴포넌트 테스트', fileUrl : '/react/jest-enzyme.md'},
